@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WS Local Settings
   m_EditorClassIdentifier: 
   protocol: 1
-  host: localhost
+  host: localhost:443
   path: websocket
   logConnection: 0
   logMessages: 0
