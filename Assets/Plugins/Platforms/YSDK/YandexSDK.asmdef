@@ -1,0 +1,19 @@
+{
+    "name": "YandexSDK",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [
+        "Editor",
+        "WebGL"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "YANDEX_SDK"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

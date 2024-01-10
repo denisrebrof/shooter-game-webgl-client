@@ -1,0 +1,19 @@
+{
+    "name": "StringSelectorEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:36318578b66ce4643968970b13a97c46",
+        "GUID:7db0ec06f687b9c4b9053cfbbe276f7c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

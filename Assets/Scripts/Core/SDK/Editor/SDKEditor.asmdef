@@ -1,0 +1,20 @@
+{
+    "name": "SDKEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:26e49315e2a59f441898fd21897eecc2",
+        "GUID:7db0ec06f687b9c4b9053cfbbe276f7c",
+        "GUID:624ab95ec9f9e5644a6f9a60fc366bbf"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

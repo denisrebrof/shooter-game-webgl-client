@@ -1,0 +1,16 @@
+{
+    "name": "PlayerTrigger",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ef32a706b9ed4968b95720322a08ce7f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

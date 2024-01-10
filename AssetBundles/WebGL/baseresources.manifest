@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 3135331615
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c17d39227415b51239dc8c9f03e0b549
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Top-Down SF/Origin/Textures/Atlas1_m.tif
+- Assets/Top-Down SF/Origin/Textures/Atlas1_AO.tif
+- Assets/Top-Down SF/Origin/Textures/Atlas1_nmp.tif
+- Assets/Top-Down SF/Origin/Textures/Grid1_ms.png
+- Assets/Top-Down SF/Origin/Textures/Atlas1_illum.tif
+- Assets/Top-Down SF/Origin/Textures/Grid1.tif
+- Assets/Top-Down SF/Origin/Textures/Atlas1_ms.png
+- Assets/Top-Down SF/Origin/Textures/Atlas1.tif
+- Assets/Top-Down SF/Origin/Textures/Grid1_nmp.tif
+Dependencies: []

@@ -1,0 +1,77 @@
+ManifestFileVersion: 0
+CRC: 1388097025
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e67686248ed5280c111c4b8ffce410e6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TexturesExport/ScifiSniperMagazine#_OcclusionMap.jpg
+- Assets/TexturesExport/ScifiUziMagazine#_MainTex.jpg
+- Assets/TexturesExport/ScifiRifleMagazine#_MainTex.jpg
+- Assets/TexturesExport/ScifiRifle#_MetallicGlossMap.png
+- Assets/TexturesExport/Astronaut#AstronautOrange#_BumpMap.png
+- Assets/TexturesExport/ScifiSniperMagazine#_EmissionMap.jpg
+- Assets/TexturesExport/ScifiSniper#_OcclusionMap.jpg
+- Assets/TexturesExport/ScifiPistol#_EmissionMap.jpg
+- Assets/TexturesExport/ScifiRifleMagazine#_BumpMap.png
+- Assets/TexturesExport/MapAtlas#_MainTex.tif
+- Assets/TexturesExport/ScifiSniper#_MetallicGlossMap.png
+- Assets/TexturesExport/ScifiUziMagazine#_BumpMap.png
+- Assets/TexturesExport/MapGrid#_MetallicGlossMap.png
+- Assets/TexturesExport/ScifiSniper#_MainTex.jpg
+- Assets/TexturesExport/ScifiRifleMagazine#_MetallicGlossMap.png
+- Assets/TexturesExport/ScifiShotgun#_MainTex.jpg
+- Assets/TexturesExport/ScifiShotgunMagazine#_OcclusionMap.jpg
+- Assets/TexturesExport/ScifiUzi#_MetallicGlossMap.png
+- Assets/TexturesExport/ScifiShotgun#_EmissionMap.jpg
+- Assets/TexturesExport/ScifiPistolMagazine#_OcclusionMap.jpg
+- Assets/TexturesExport/ScifiUzi#_MainTex.jpg
+- Assets/TexturesExport/ScifiUziMagazine#_OcclusionMap.jpg
+- Assets/TexturesExport/ScifiPistol#_BumpMap.png
+- Assets/TexturesExport/ScifiShotgun#_OcclusionMap.jpg
+- Assets/TexturesExport/ScifiRifle#_OcclusionMap.jpg
+- Assets/TexturesExport/MapAtlas#_EmissionMap.tif
+- Assets/TexturesExport/ScifiPistol#_OcclusionMap.jpg
+- Assets/TexturesExport/MapGrid#_BumpMap.tif
+- Assets/TexturesExport/ScifiSniper#_BumpMap.png
+- Assets/TexturesExport/ScifiUzi#_OcclusionMap.jpg
+- Assets/TexturesExport/MapLED#_MainTex.tif
+- Assets/TexturesExport/MapGrid#_MainTex.tif
+- Assets/TexturesExport/Map_Atlas#_OcclusionMap.tif
+- Assets/TexturesExport/Astronaut#AstronautOrange#_MetallicGlossMap.png
+- Assets/TexturesExport/ScifiShotgunMagazine#_EmissionMap.jpg
+- Assets/TexturesExport/MapAtlas#_MetallicGlossMap.tif
+- Assets/TexturesExport/MapAtlas#_BumpMap.tif
+- Assets/TexturesExport/ScifiSniperMagazine#_BumpMap.png
+- Assets/TexturesExport/ScifiRifle#_MainTex.jpg
+- Assets/TexturesExport/ScifiRifleMagazine#_OcclusionMap.jpg
+- Assets/TexturesExport/ScifiRifle#_BumpMap.png
+- Assets/TexturesExport/ScifiPistol#_MetallicGlossMap.png
+- Assets/TexturesExport/ScifiPistol#_MainTex.jpg
+- Assets/TexturesExport/ScifiUziMagazine#_EmissionMap.jpg
+- Assets/TexturesExport/ScifiShotgunMagazine#_MainTex.jpg
+- Assets/TexturesExport/ScifiSniperMagazine#_MainTex.jpg
+- Assets/TexturesExport/ScifiRifle#_EmissionMap.jpg
+- Assets/TexturesExport/ScifiShotgunMagazine#_BumpMap.png
+- Assets/TexturesExport/ScifiSniperMagazine#_MetallicGlossMap.png
+- Assets/TexturesExport/ScifiShotgun#_MetallicGlossMap.png
+- Assets/TexturesExport/ScifiUziMagazine#_MetallicGlossMap.png
+- Assets/TexturesExport/AstronautOrange#_MainTex.png
+- Assets/TexturesExport/ScifiPistolMagazine#_BumpMap.png
+- Assets/TexturesExport/ScifiShotgun#_BumpMap.png
+- Assets/TexturesExport/ScifiShotgunMagazine#_MetallicGlossMap.png
+- Assets/TexturesExport/ScifiUzi#_BumpMap.png
+- Assets/TexturesExport/ScifiPistolMagazine#_MainTex.jpg
+- Assets/TexturesExport/ScifiPistolMagazine#_MetallicGlossMap.png
+- Assets/TexturesExport/Astronaut#_MainTex.png
+- Assets/TexturesExport/ScifiSniper#_EmissionMap.jpg
+- Assets/TexturesExport/ScifiUzi#_EmissionMap.jpg
+Dependencies: []

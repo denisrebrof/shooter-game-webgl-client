@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 1838970677
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: baseresources
+      Dependencies: {}

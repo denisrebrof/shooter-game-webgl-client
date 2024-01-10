@@ -1,0 +1,22 @@
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=$GA_ID"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){ dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', '$GA_ID', {
+			cookie_flags: 'SameSite=None;Secure',
+			'custom_map': {'dimension2': 'ab_test_property_setup'}
+			}
+		);
+	</script>
+	<script>
+		window.onerror = function(message, source, lineno, colno, error) {
+			var errorDetails = error? error.stack : ('Script: '+ source + ' Line:'+ lineno + ' Column: '+ colno +' Message: '+ message);
+			gtag('event', 'exception', {
+			  'description': errorDetails,
+			  'fatal': true
+			});
+		}
+	</script>
+	

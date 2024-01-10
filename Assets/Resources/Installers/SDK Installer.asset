@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd97512cf034d5e4789fb935ef839610, type: 3}
+  m_Name: SDK Installer
+  m_EditorClassIdentifier: 
+  yandexSDK: {fileID: 8710558202649764059, guid: b1d21f0c90494814da82b4a7183d8c8a, type: 3}
+  vksdk: {fileID: 2947833616777846095, guid: 19ea095d4fcd1ff438a11d0e1ce4493b, type: 3}
+  pokiUnitySDK: {fileID: 687955237571284230, guid: 333713a02fbc2f34d8993a07a4d99be9, type: 3}
+  crazySDK: {fileID: 4543999372597840148, guid: 0a65746c4231d524fbc7763a9033e7d5, type: 3}

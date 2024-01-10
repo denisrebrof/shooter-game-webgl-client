@@ -1,0 +1,3 @@
+Yandex - Brotli, Decompression Fallback = true
+VK (Ginhub) - None, Decompression Fallback = false
+CG - Gzip, ?
