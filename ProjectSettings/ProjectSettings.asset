@@ -628,6 +628,7 @@ PlayerSettings:
   webGLDecompressionFallback: 1
   webGLPowerPreference: 2
   scriptingDefineSymbols:
+    Standalone: 
     WebGL: GOOGLE_ANALYTICS;YANDEX_SDK
   additionalCompilerArguments: {}
   platformArchitecture: {}
