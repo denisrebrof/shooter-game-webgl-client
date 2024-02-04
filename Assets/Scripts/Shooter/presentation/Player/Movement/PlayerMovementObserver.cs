@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Shooter.domain.Model;
 using UniRx;
 using UnityEngine;
@@ -15,6 +16,9 @@ namespace Shooter.presentation.Player.Movement
 
         private bool posInitialized;
 
+        [SerializeField] private List<Vector3> debugBos = new();
+        [SerializeField] private bool drawDebug;
+
         private void OnEnable()
         {
             posInitialized = false;
@@ -28,9 +32,11 @@ namespace Shooter.presentation.Player.Movement
             if (posInitialized)
             {
                 agent.MoveTo(data.pos);
+                if (drawDebug)
+                    debugBos.Add(data.pos.Pos);
                 return;
             }
-            
+
             transform.position = GetSpawnPos(data.pos.Pos);
             transform.rotation = Quaternion.Euler(0f, data.pos.r, 0f);
             agent.Rewind();
@@ -44,6 +50,17 @@ namespace Shooter.presentation.Player.Movement
         private void OnDisable()
         {
             movementHandler.Dispose();
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (!drawDebug)
+                return;
+
+            foreach (var pos in debugBos)
+            {
+                Gizmos.DrawSphere(pos, 0.5f);    
+            }
         }
     }
 }

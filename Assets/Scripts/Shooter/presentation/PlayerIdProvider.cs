@@ -4,19 +4,21 @@ using UnityEngine;
 
 namespace Shooter.presentation
 {
-    public class PlayerIdProvider: MonoBehaviour
+    public class PlayerIdProvider : MonoBehaviour
     {
-        private readonly BehaviorSubject<long> playerIdSubject = new(-1);
+        private const long DefaultPlayerId = long.MaxValue;
+
+        private readonly BehaviorSubject<long> playerIdSubject = new(DefaultPlayerId);
 
         public void SetPlayerId(long id) => playerIdSubject.OnNext(id);
 
         public IObservable<long> PlayerIdFlow => playerIdSubject
-            .Where(id => id > 0);
+            .Where(id => id != DefaultPlayerId);
 
         public bool GetPlayerId(out long playerId)
         {
             playerId = playerIdSubject.Value;
-            return playerId > 0;
+            return playerId != DefaultPlayerId;
         }
     }
 }

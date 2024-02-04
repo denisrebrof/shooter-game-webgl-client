@@ -86,9 +86,9 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _PlayerMarkSize: 0.13
-    - _PlayerPosX: 0.6446215
-    - _PlayerPosY: 0.8041774
-    - _PlayerRot: 4.9136553
+    - _PlayerPosX: 0.42270198
+    - _PlayerPosY: 0.6320438
+    - _PlayerRot: 6.252759
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1

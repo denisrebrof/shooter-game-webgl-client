@@ -28,9 +28,7 @@ namespace Shooter.presentation.Player.Weapons
         private void SetWeapon(GameObject prefab)
         {
             foreach (Transform child in weaponRoot)
-            {
                 Destroy(child.gameObject);
-            }
 
             Instantiate(prefab, weaponRoot);
         }

@@ -22,11 +22,11 @@ MonoBehaviour:
     - prefab: {fileID: 8776043907773870750, guid: 60aa3743e24b4ec41a8eef8b546517fd, type: 3}
       playerPrefab: {fileID: 1565222317317479057, guid: 1ad3e348f11b7c24990f6281405fd0ad, type: 3}
       icon: {fileID: -353503636, guid: 09ce7d5900c0f704b80af7a375bde261, type: 3}
-      damage: 7
+      damage: 100
     - prefab: {fileID: 2548953188722239872, guid: 10057ec0189ba8f46ba1934891d19b1a, type: 3}
       playerPrefab: {fileID: 6423974232306954009, guid: cc89f9850eb5ef945a500c9afe1e1d02, type: 3}
       icon: {fileID: 1690325837, guid: 09ce7d5900c0f704b80af7a375bde261, type: 3}
-      damage: 35
+      damage: 100
   defaultData:
     prefab: {fileID: 3879778208174025606, guid: e540f48c5686d4947a8911d9eef276e7, type: 3}
     playerPrefab: {fileID: 3879778208174025606, guid: e540f48c5686d4947a8911d9eef276e7, type: 3}
