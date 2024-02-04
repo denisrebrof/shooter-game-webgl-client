@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prodSettings: {fileID: 11400000, guid: 4ab21ca1d6cba4146bac072e48f643bd, type: 2}
   stageSettings: {fileID: 11400000, guid: 42f5b846b77c0fc4ebdf39a679e1ecea, type: 2}
-  useStage: 1
+  useStage: 0
