@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Weapon Info_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: ac4165831c8670e4f8c327d3a4c12210, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 21475921920
+    m_Localized: Level $ Required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15952023552
+    m_Localized: Purchase for $
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25032691712
+    m_Localized: Upgrade for $
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29780643840
+    m_Localized: Weapon purchased!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32632770560
+    m_Localized: Choose slot to use it in game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37682712576
+    m_Localized: Purchase failure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42199977984
+    m_Localized: Something went wrong :(
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1602321682432
+    m_Localized: Weapon upgraded!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1617282764800
+    m_Localized: Try this brand-new upgaded gun in battle!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1625457463296
+    m_Localized: Upgrade failure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1628506722304
+    m_Localized: Something went wrong :(
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2541761892352
+    m_Localized: Set slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5755617972224
+    m_Localized: Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5752686153728
+    m_Localized: Fire Rate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5683555635200
+    m_Localized: Ammunition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15925165199360
+    m_Localized: Slot changed!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15930429050880
+    m_Localized: Weapon added to your battle loadout
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15935713873920
+    m_Localized: Slot selection failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15938083655680
+    m_Localized: Something went wrong :(
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17158051500032
+    m_Localized: Select slot
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

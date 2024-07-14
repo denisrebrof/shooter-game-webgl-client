@@ -8,11 +8,11 @@ namespace Utils.WebSocketClient._di
     [CreateAssetMenu(menuName = "Installers/WebSocketInstaller")]
     public class WebSocketInstaller : ScriptableObjectInstaller
     {
-        [SerializeField] private WSSettings prodSettings;
-        [SerializeField] private WSSettings stageSettings;
-        [SerializeField] private bool useStage;
+        public WSSettings prodSettings;
+        public WSSettings stageSettings;
+        public bool useStage;
 
-        private WSSettings Settings
+        public WSSettings Settings
         {
             get
             {

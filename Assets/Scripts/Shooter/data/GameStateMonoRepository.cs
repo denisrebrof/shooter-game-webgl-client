@@ -14,6 +14,8 @@ namespace Shooter.data
     {
         private readonly Subject<GameState> stateSubject = new();
         private GameState? current;
+        
+        [SerializeField] private GameState preview;
 
         public IObservable<GameState> state => current.HasValue
             ? stateSubject.StartWith(current.Value) 
@@ -22,14 +24,15 @@ namespace Shooter.data
         [Inject(Id = IWSCommandsUseCase.AuthorizedInstance)]
         private IWSCommandsUseCase commandsUseCase;
 
-        private void OnEnable()
-        {
-            commandsUseCase
+        private void OnEnable() => commandsUseCase
                 .Listen<GameState>(Commands.GameState)
-                .Do(stateUpdate => current = stateUpdate)
+                .Do(stateUpdate =>
+                {
+                    preview = stateUpdate;
+                    current = stateUpdate;
+                })
                 .Subscribe(stateSubject.OnNext)
                 .AddTo(this);
-        }
 
         private void ClearSubscriptions()
         {

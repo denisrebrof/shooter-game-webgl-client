@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Shooter.domain;
 using Shooter.domain.Model;
 using Shooter.domain.Repositories;
 using UniRx;
@@ -10,15 +9,18 @@ namespace Shooter.presentation.Scene
 {
     public class PlayingStateActivator : MonoBehaviour
     {
-        [Inject] private IGameStateRepository gameStateRepository;
         [SerializeField] private List<GameObject> playingStateObjects;
+        [Inject] private IGameStateRepository gameStateRepository;
 
-        private void Awake() => gameStateRepository
-            .state
-            .Select(state => state.Type == GameStateTypes.Playing)
-            .DistinctUntilChanged()
-            .Subscribe(SetObjectsActive)
-            .AddTo(this);
+        private void Awake()
+        {
+            gameStateRepository
+                .state
+                .Select(state => state.Type == GameStateTypes.Playing)
+                .DistinctUntilChanged()
+                .Subscribe(SetObjectsActive)
+                .AddTo(this);
+        }
 
         private void SetObjectsActive(bool active)
         {

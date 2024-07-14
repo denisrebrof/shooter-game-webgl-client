@@ -1,5 +1,5 @@
-using Core.Analytics.levels;
 using Features.Levels.data;
+using Features.Levels.domain.model;
 using Zenject;
 
 namespace Features.Levels.presentation.ui

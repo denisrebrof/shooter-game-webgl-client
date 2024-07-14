@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Weapons_Common
+  m_EditorClassIdentifier: 
+  m_GroupName: Weapons_Common
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ca63531ca3b5a8d4f94647293f2c7768
+  m_SerializeEntries:
+  - m_GUID: 027ae8cddc85a484fa5fd415d19d7a8e
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Animators/Character/AC_LPSP_PCH.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fb6f43119b54ff4f97adf28a084973b
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/_Common/A_FP_PCH_Walk_F_Additive.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: effb89ce0d3b9364982bb5ecad307e0e
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/_Common/A_FP_PCH_Walk_L_Additive.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4f5209f0c2925d4885a0547adafb3eb
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/_Common/A_FP_PCH_Walk_F_Pose_Additive.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 190c6562398e20e4891c3765cfc97777
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/_Common/A_FP_PCH_Walk_R_Additive.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1f38febec9aaad4ea06c3319d5bd08a
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/_Common/A_FP_PCH_Walk_B_Additive.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 03e80c4295847984b8a9c40b67156ff9
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/Handguns/A_FP_PCH_Handgun_Run_01_Additive.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72991d30d9c6b8347a52972f5d9843db
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/_Common/A_FP_PCH_Run_02_Additive.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bd7f5660d40c3548b45a6e3108a7daa
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/_Common/A_FP_PCH_Aim_Walk_F_Additive.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60a4be9f303d3224b8b249f14fc202d3
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Impact_Metal_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d983fe9c9cb94634489590223107e782
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Impact_Blood_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b630af342144bed489dd1ad86bd423ef
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Debris_Concrete_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d42b56c1ec6975a47939b051c571a02c
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Bullet_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd335007fc2377b468b295fbf156c947
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Blood_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 674087750461e8b488460fee85c245aa
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Smoke_01_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f72cb00e94737b14f8c51ceb65bccca2
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Impact_Dirt_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 485ca161da43e314bb4e46c394437d12
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_MuzzleFlash_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0ed79ffbec3d7e4eb26bafbbfd4a322
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Sparks_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e676fea0225b9c74f97851005f7cc31a
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Impact_Concrete_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36865affba18a334798e4b94f558b6b4
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Textures/Effects/T_Debris_Dirt_D.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d94053912a195654980b29c2e66971d8
+    m_Address: Assets/Export/Weapons/WeaponMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 021d74bec379fa34b973dcad3537b56f
+    m_Address: Assets/Export/Weapons/Weapons Gold.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9568671464f830546a0adf91836a4408
+    m_Address: Assets/Export/Weapons/Weapons.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02d320a4654a1a146a217f282000a1ec
+    m_Address: Assets/Export/Weapons/WeaponMapGold.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c638dfae3f3edf843b2614dae230a771
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Big.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1995a53a949fac4db5722fc1df9efe4
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Casings/P_LPSP_Casing_Small.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25a6bd588ee932f4f8be552fd0fae250
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Effects/Particles/P_LPSP_WEP_Flash_Light.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0270615e59446d04993902c2f9ee96ba
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Data/Leaning/Curves/SO_AC_Leaning_Item_Aiming.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0535a7a2a95f7c949b072f3707e8139d
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Data/Leaning/Curves/SO_AC_Leaning_Camera.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfda376b0f658a748870ea8f7c2c7c03
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Meshes/Weapons/ARs/SK_AR_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea6d984b0ce8e2842af48178ee2c22af
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/Handguns/A_FP_PCH_Handgun_Aim_Fire.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2613f806b0b3c254e81855c97b89bbcf
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Art/Animations/Character/Handguns/A_FP_PCH_Handgun_Fire.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 73b9eccb3ad0ed1419bb951b9b680870, type: 2}
+    - {fileID: 11400000, guid: 6d312065c34f0e64a97fbfb5b52f54d5, type: 2}

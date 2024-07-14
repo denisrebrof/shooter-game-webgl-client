@@ -9,9 +9,10 @@ namespace Shooter.presentation.Player
 {
     public class PlayerKilledStateObserver : PlayerBehavior
     {
-        [Inject] private GamePlayerAliveStateUpdatesUseCase aliveStateUpdatesUseCase;
         [SerializeField] private GameObject character;
         [SerializeField] private GameObject corpsePrefab;
+        
+        [Inject] private GamePlayerAliveStateUpdatesUseCase aliveStateUpdatesUseCase;
 
         [CanBeNull] private GameObject existingCorpse;
 
@@ -25,7 +26,10 @@ namespace Shooter.presentation.Player
                 .Subscribe(OnAliveStateUpdate);
         }
 
-        private void OnDisable() => handler.Dispose();
+        private void OnDisable()
+        {
+            handler.Dispose();
+        }
 
         private void OnAliveStateUpdate(AliveStateUpdate update)
         {
@@ -38,10 +42,10 @@ namespace Shooter.presentation.Player
 
             var characterTransform = character.transform;
             existingCorpse = Instantiate(
-                original: corpsePrefab,
-                position: characterTransform.position,
-                rotation: characterTransform.rotation,
-                parent: transform
+                corpsePrefab,
+                characterTransform.position,
+                characterTransform.rotation,
+                transform
             );
             existingCorpse.SetActive(true);
         }

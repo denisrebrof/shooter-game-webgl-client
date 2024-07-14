@@ -11,7 +11,7 @@ namespace Features.Balance.data
 {
     public class WSBalanceRepository : IBalanceRepository
     {
-        private static BalanceState DefaultState = new BalanceState
+        private static BalanceState DefaultState = new()
         {
             currencies = new List<string>(),
             amounts = new List<long>(),

@@ -13,9 +13,6 @@ namespace Shooter.presentation.Player.Weapons
 {
     public class WeaponShootController : PlayerBehavior
     {
-        [Inject] private IGameActionsRepository actionsRepository;
-        [Inject] private SimpleBulletPool bulletPool;
-
         [Header("Flame")] [SerializeField] private Transform shootEffect;
         [SerializeField] private float flameDuration = 0.1f;
         [SerializeField] private float flameScale = 0.2f;
@@ -30,8 +27,12 @@ namespace Shooter.presentation.Player.Weapons
 
         [Header("Audio")] [SerializeField] private float minSoundDelay = 0.5f;
         [SerializeField] private AudioSource source;
+        [Inject] private IGameActionsRepository actionsRepository;
+        [Inject] private SimpleBulletPool bulletPool;
 
         private IDisposable handler = Disposable.Empty;
+
+        private float lastShotTime;
         [CanBeNull] private Coroutine recoilCoroutine;
 
         private void OnEnable()
@@ -41,7 +42,7 @@ namespace Shooter.presentation.Player.Weapons
 
             handler = GetShootFlow(playerId)
                 .Select(action => action.direction.Pos)
-                .Subscribe(Shoot)
+                .Subscribe(shootDir => Shoot(shootDir, playerId))
                 .AddTo(this);
         }
 
@@ -51,9 +52,12 @@ namespace Shooter.presentation.Player.Weapons
             AbortRecoil();
         }
 
-        private IObservable<ActionShoot> GetShootFlow(long playerId) => actionsRepository
-            .Shoots
-            .Where(shoot => shoot.shooterId == playerId);
+        private IObservable<ActionShoot> GetShootFlow(long playerId)
+        {
+            return actionsRepository
+                .Shoots
+                .Where(shoot => shoot.shooterId == playerId);
+        }
 
         private IEnumerator RecoilCoroutine()
         {
@@ -82,9 +86,7 @@ namespace Shooter.presentation.Player.Weapons
             }
         }
 
-        private float lastShotTime = 0f;
-
-        private void Shoot(Vector3 direction)
+        private void Shoot(Vector3 direction, long playerId)
         {
             if (Time.time - lastShotTime > minSoundDelay)
             {
@@ -103,6 +105,7 @@ namespace Shooter.presentation.Player.Weapons
             var rotation = Quaternion.LookRotation(rotVector);
             bul.ReturnToPool = () => bulletPool.Return(bul);
             bul.Reset(rootPos, rotation);
+            bul.playerId = playerId;
 
             AbortRecoil();
             StartCoroutine(RecoilCoroutine());

@@ -44,6 +44,7 @@ namespace Utils.WebSocketClient.data
             await ShutDownExistingSocket();
             UpdateConnectionState(WSConnectionState.Connecting);
             var websocket = new WebSocket(settings.URL, headers);
+            Debug.Log("Connect with url " + settings.URL);
             websocket.OnOpen += () =>
             {
                 if (settings.logConnection)

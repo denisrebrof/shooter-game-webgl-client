@@ -34,9 +34,23 @@
 
         public const long GetUsername = 20L;
         public const long SetUsername = 21L;
-        
+
         public const long Rating = 22L;
         public const long UserStats = 23L;
         public const long ResVersion = 24L;
+
+        public const long LevelProgression = 25L;
+
+        public const long SubmitVisibility = 26L;
+        public const long UnclaimedLevelRewardsData = 27L;
+        public const long ClaimLevelRewards = 28L;
+
+        public const long WeaponStates = 29L;
+        public const long LoadoutState = 30L;
+        public const long PurchaseWeapon = 31L;
+        public const long SetWeaponSlot = 32L;
+        
+        public const long HitByBot = 33L;
+        public const long IntentFlagAction = 34L;
     }
 }

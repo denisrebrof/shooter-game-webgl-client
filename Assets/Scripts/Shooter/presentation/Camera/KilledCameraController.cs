@@ -10,11 +10,6 @@ namespace Shooter.presentation.Camera
 {
     public class KilledCameraController : MonoBehaviour
     {
-        [Inject] private IAuthRepository authRepository;
-        [Inject] private GamePlayerUseCase playerUseCase;
-        [Inject] private CurrentPlayerAliveStateUpdatesUseCase aliveStateUpdatesUseCase;
-        [Inject] private IGameActionsRepository actionsRepository;
-
         [SerializeField] private Transform camTransform;
 
         [SerializeField] private float killerDistance = 2f;
@@ -23,8 +18,12 @@ namespace Shooter.presentation.Camera
         [SerializeField] private float rotateForce;
 
         private readonly BehaviorSubject<long> killerId = new(-1);
+        [Inject] private IGameActionsRepository actionsRepository;
+        [Inject] private CurrentPlayerAliveStateUpdatesUseCase aliveStateUpdatesUseCase;
+        [Inject] private IAuthRepository authRepository;
 
         private IDisposable flyAwayHandler = Disposable.Empty;
+        [Inject] private GamePlayerUseCase playerUseCase;
 
         private void Awake()
         {
@@ -64,15 +63,19 @@ namespace Shooter.presentation.Camera
         {
             var camPos = camTransform.position;
             var toCam = camPos - killer;
-            var targetPos = killer + new Vector3(toCam.x, 0, toCam.y).normalized * killerDistance + Vector3.up * flyUpHeight;
+            var targetPos = killer + new Vector3(toCam.x, 0, toCam.y).normalized * killerDistance +
+                            Vector3.up * flyUpHeight;
             camTransform.position = Vector3.Lerp(camPos, targetPos, Time.deltaTime * flyAwayForce);
             var targetRot = Quaternion.LookRotation(killer - camPos, Vector3.up);
             camTransform.rotation = Quaternion.Slerp(camTransform.rotation, targetRot, Time.deltaTime * rotateForce);
         }
 
-        private IObservable<Vector3> GetKillerPosition(Vector3 defaultPos) => killerId
-            .Select(id => GetPlayerPosition(id, defaultPos))
-            .Switch();
+        private IObservable<Vector3> GetKillerPosition(Vector3 defaultPos)
+        {
+            return killerId
+                .Select(id => GetPlayerPosition(id, defaultPos))
+                .Switch();
+        }
 
         private IObservable<Vector3> GetPlayerPosition(long playerId, Vector3 defaultPos)
         {

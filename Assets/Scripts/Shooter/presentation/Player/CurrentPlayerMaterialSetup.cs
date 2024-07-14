@@ -23,8 +23,14 @@ namespace Shooter.presentation.Player
                 .Subscribe(SetPlayerMaterial).AddTo(this);
         }
 
-        private Material GetPlayerMaterial(Teams team) => team == Teams.Red ? redTeamMaterial : blueTeamMaterial;
+        private Material GetPlayerMaterial(Teams team)
+        {
+            return team == Teams.Red ? redTeamMaterial : blueTeamMaterial;
+        }
 
-        private void SetPlayerMaterial(Material mat) => target.material = mat;
+        private void SetPlayerMaterial(Material mat)
+        {
+            target.material = mat;
+        }
     }
 }

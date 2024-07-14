@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Fonts
+  m_EditorClassIdentifier: 
+  m_GroupName: Fonts
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8716f08a992ab1a43a599b68d3269def
+  m_SerializeEntries:
+  - m_GUID: 678cb537d71336d4bb6177207adb68f2
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-Regular Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 59d64d80dfd9ad44c8515fddb18aee9a
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-Italic Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 002a4c2d2dd7d564098307b57923cf46
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-SemiboldItalic Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6dc55ee62615cf84a80bcaf1b8793c64
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-Semibold Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac470db7778e91f4fba0decfb23fb1d1
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-ExtraBold Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3dc34007d9d5d8c4e936471a2ecaf8fa
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-ExtraBoldItalic Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2bdcfc4e29c6d3b4bb532c5dabddefea
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-LightItalic Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92087fbe70151534da8fa32e8df9a0b5
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-BoldItalic Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9239dc7c6b0642f4f95d065cf5896302
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-Bold Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15b017ef042f0f14e9b727f55cff546f
+    m_Address: Assets/Modern UI Pack/Fonts RU/OpenSans-Light Cyrillic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d10d3fbe67cb68d41930a013bc4e2e43
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-LightItalic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5fa6cba27f1b7a47838db200baa1556
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-SemiboldItalic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f17e8bb3967fe14093d5fec798fffd9
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-Light SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b03b7a4c74cd6294ca732f49684716ee
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-BoldItalic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bd810f1cbcb0f446a8f5a31453e243f
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-Regular SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca60657c190bc8c4e89dfb3e23d76209
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-ExtraBold SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff92caddbdea54743a04dda78cc41035
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-Italic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84dd14695854bbc43a5faa24fcf93d0d
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-Semibold SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4041c94a2181b243bd1912946bfbe63
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-ExtraBoldItalic SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa328c1ae3ffb6b4583cf371153b0be6
+    m_Address: Assets/Modern UI Pack/Fonts/OpenSans-Bold SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2a132952bb2cee54fb22a1de2720c565, type: 2}
+    - {fileID: 11400000, guid: e0ec63933f09bcc4eb0689b565537708, type: 2}

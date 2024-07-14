@@ -18,6 +18,14 @@ namespace Shooter.presentation.Player
 
         private TransformData[] initialPositions;
 
+        private void OnEnable()
+        {
+            initialPositions ??= new TransformData[corpseBones.Count];
+            corpseAnimator.enabled = false;
+            SyncArmature();
+            StartCoroutine(LerpBonesToAnimation());
+        }
+
         [ContextMenu("Grab Bones")]
         private void GrabBones()
         {
@@ -31,14 +39,9 @@ namespace Shooter.presentation.Player
             animationStartPositions = corpseBones.Select(GetData).ToList();
         }
 
-        private static TransformData GetData(Transform source) => new(source.localPosition, source.localRotation);
-
-        private void OnEnable()
+        private static TransformData GetData(Transform source)
         {
-            initialPositions ??= new TransformData[corpseBones.Count];
-            corpseAnimator.enabled = false;
-            SyncArmature();
-            StartCoroutine(LerpBonesToAnimation());
+            return new TransformData(source.localPosition, source.localRotation);
         }
 
         private IEnumerator LerpBonesToAnimation()

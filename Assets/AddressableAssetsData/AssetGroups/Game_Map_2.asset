@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Game_Map_2
+  m_EditorClassIdentifier: 
+  m_GroupName: Game_Map_2
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ba626ee468d232044b9cfa514e0ad963
+  m_SerializeEntries:
+  - m_GUID: 51925a7a75d313245afc06de3e4eb5c1
+    m_Address: Assets/Scenes/GameTundra.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7acf99412f09d364cbd206d86ca47744, type: 2}
+    - {fileID: 11400000, guid: 3b16557d72158fd438d5bd2ea9d13b90, type: 2}

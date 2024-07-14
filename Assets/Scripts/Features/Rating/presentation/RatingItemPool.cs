@@ -1,18 +1,11 @@
-using Shooter.presentation.UI.Rating;
 using UnityEngine;
 using Utils.Pooling;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 
-public class RatingItemPool : MonoPool<RatingItemView>
+namespace Features.Rating.presentation
 {
-    [ContextMenu("Generate")]
-    public void GeneratePool()
+    public class RatingItemPool : MonoPool<RatingItemView>
     {
-        Generate();
-#if UNITY_EDITOR
-        EditorApplication.MarkSceneDirty();
-#endif
+        [ContextMenu("Generate")]
+        public void GeneratePool() => Generate();
     }
 }

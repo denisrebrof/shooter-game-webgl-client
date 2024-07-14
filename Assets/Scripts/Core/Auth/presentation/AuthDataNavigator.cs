@@ -31,9 +31,10 @@ namespace Core.Auth.presentation
         private AuthData GetLocalData()
         {
 #if UNITY_EDITOR
-            var playerId = ClonesManager.IsClone()
-                ? localPlayerIdUseCase.GeneratedPlayerId()
-                : localPlayerIdUseCase.GetOrCreate();
+            // var playerId = ClonesManager.IsClone()
+            //     ? localPlayerIdUseCase.GeneratedPlayerId()
+            //     : localPlayerIdUseCase.GetOrCreate();
+            var playerId = localPlayerIdUseCase.GeneratedPlayerId();
 #else
             var playerId = localPlayerIdUseCase.GetOrCreate();
 #endif

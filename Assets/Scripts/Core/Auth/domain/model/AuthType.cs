@@ -1,4 +1,4 @@
-﻿namespace Core.Auth.domain
+﻿namespace Core.Auth.domain.model
 {
     public enum AuthType
     {

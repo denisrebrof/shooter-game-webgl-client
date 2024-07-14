@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Features.Rating.domain;
-using Shooter.presentation.UI.Rating;
 using UniRx;
 using UnityEngine;
 using Zenject;
@@ -16,7 +15,7 @@ namespace Features.Rating.presentation
         [SerializeField] private GameObject loader;
         [SerializeField] private RectTransform root;
 
-        private List<RatingItemView> ratingViews = new();
+        private readonly List<RatingItemView> items = new();
 
         private IDisposable request = Disposable.Empty;
 
@@ -45,12 +44,12 @@ namespace Features.Rating.presentation
                 );
             }
 
-            while (ratingViews.Count > data.Count)
+            while (items.Count > data.Count)
             {
-                var lastItemIndex = ratingViews.Count - 1;
-                var nextReturnItem = ratingViews[lastItemIndex];
+                var lastItemIndex = items.Count - 1;
+                var nextReturnItem = items[lastItemIndex];
                 pool.Return(nextReturnItem);
-                ratingViews.RemoveAt(lastItemIndex);
+                items.RemoveAt(lastItemIndex);
             }
 
             loader.SetActive(false);
@@ -58,11 +57,11 @@ namespace Features.Rating.presentation
 
         private RatingItemView GetView(int index)
         {
-            if (ratingViews.Count > index)
-                return ratingViews[index];
+            if (items.Count > index)
+                return items[index];
 
             var item = pool.Pop();
-            ratingViews.Add(item);
+            items.Add(item);
 
             var itemTransform = item.transform;
             itemTransform.SetParent(root);

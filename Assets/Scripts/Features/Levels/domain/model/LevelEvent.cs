@@ -1,4 +1,4 @@
-﻿namespace Core.Analytics.levels
+﻿namespace Features.Levels.domain.model
 {
     public enum LevelEvent
     {

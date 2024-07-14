@@ -1,6 +1,5 @@
 ﻿using System;
 using UniRx;
-using UnityEngine;
 using Zenject;
 
 namespace Shooter.domain

@@ -11,7 +11,6 @@ namespace Features.Rating.presentation
     {
         [Inject] private RatingUseCase useCase;
 
-        [SerializeField] private GameObject root;
         [SerializeField] private TMP_Text kills;
         [SerializeField] private TMP_Text death;
         [SerializeField] private TMP_Text kd;
@@ -34,7 +33,6 @@ namespace Features.Rating.presentation
             death.text = data.death.ToString();
             var kdValue = data.death > 0 ? ((float)data.kills) / data.death : 1f;
             kd.text = Mathf.Min(9999f, kdValue).ToString("0.00");
-            root.SetActive(true);
         }
     }
 }

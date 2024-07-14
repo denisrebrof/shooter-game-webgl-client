@@ -17,15 +17,10 @@ namespace Features.Lobby.presentation
         [SerializeField] private Button enterLobbyButton;
         [SerializeField] private GameObject enterLobbyButtonSearchText;
         [SerializeField] private GameObject enterLobbyButtonIdleText;
-        [SerializeField] private Toggle autoJoinToggle;
         [SerializeField] private Button exitLobbyButton;
         [SerializeField] private Button openGamesButton;
 
         private IDisposable stateHandler = Disposable.Empty;
-
-        private Coroutine autoJoinCoroutine;
-
-        private bool lobbyState;
 
         private void Awake()
         {
@@ -33,8 +28,6 @@ namespace Features.Lobby.presentation
             Cursor.visible = true;
             enterLobbyButton.onClick.AddListener(JoinLobby);
             exitLobbyButton.onClick.AddListener(LeaveLobby);
-            autoJoinToggle.isOn = AutoJoinUseCase.Instance.AutoJointSetting;
-            autoJoinToggle.onValueChanged.AddListener(isOn => AutoJoinUseCase.Instance.AutoJointSetting = isOn);
         }
 
         private void OnEnable()
@@ -43,17 +36,9 @@ namespace Features.Lobby.presentation
             stateHandler = lobbyUseCase
                 .GetLobbyStateFlow()
                 .Subscribe(HandleLobbyState);
-            autoJoinCoroutine = StartCoroutine(AutoJoinCoroutine());
         }
 
-        private void OnDisable()
-        {
-            stateHandler.Dispose();
-            if (autoJoinCoroutine == null)
-                return;
-
-            StopCoroutine(autoJoinCoroutine);
-        }
+        private void OnDisable() => stateHandler.Dispose();
 
         private void HandleLobbyState(bool inLobby)
         {
@@ -64,7 +49,6 @@ namespace Features.Lobby.presentation
             enterLobbyButtonIdleText.SetActive(!inLobby);
             exitLobbyButton.gameObject.SetActive(inLobby);
             openGamesButton.gameObject.SetActive(!inLobby);
-            lobbyState = inLobby;
         }
 
         private void JoinLobby() => lobbyUseCase
@@ -74,15 +58,6 @@ namespace Features.Lobby.presentation
         private void LeaveLobby() => lobbyUseCase
             .LeaveLobby()
             .AddTo(this);
-
-        private IEnumerator AutoJoinCoroutine()
-        {
-            yield return new WaitForSeconds(0.5f);
-            if (lobbyState || !AutoJoinUseCase.Instance.AutoJoinAvailable)
-                yield break;
-
-            JoinLobby();
-        }
 
         private void OnDestroy() => StopAllCoroutines();
     }

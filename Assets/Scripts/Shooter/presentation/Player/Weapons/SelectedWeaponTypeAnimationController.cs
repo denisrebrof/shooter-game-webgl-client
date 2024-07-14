@@ -6,11 +6,10 @@ namespace Shooter.presentation.Player.Weapons
 {
     public class SelectedWeaponTypeAnimationController : PlayerDataBehaviour
     {
+        private static readonly int Armed = Animator.StringToHash("Armed");
         [SerializeField] private Animator target;
 
         private IDisposable handler = Disposable.Empty;
-
-        private static readonly int Armed = Animator.StringToHash("Armed");
 
         private void OnEnable()
         {
@@ -22,8 +21,14 @@ namespace Shooter.presentation.Player.Weapons
                 .AddTo(this);
         }
 
-        private void OnDisable() => handler.Dispose();
+        private void OnDisable()
+        {
+            handler.Dispose();
+        }
 
-        private void SetWeaponArmed(bool armed) => target.SetBool(Armed, armed);
+        private void SetWeaponArmed(bool armed)
+        {
+            target.SetBool(Armed, armed);
+        }
     }
 }

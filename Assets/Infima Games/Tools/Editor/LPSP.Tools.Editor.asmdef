@@ -1,0 +1,18 @@
+{
+    "name": "LPSP.Tools.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e2abdef7357cebb4e82f7f798975ffed"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

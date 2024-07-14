@@ -5,8 +5,7 @@ namespace Shooter.presentation.Player.Weapons
 {
     public class ImpactController : MonoBehaviour, IImpactNavigator
     {
-        [SerializeField] private List<ParticleSystem> impactPoolParticles;
-        [SerializeField] private List<Transform> impactPoolTransforms;
+        [SerializeField] private List<ImpactView> impactPool;
 
         private int index;
 
@@ -15,14 +14,11 @@ namespace Shooter.presentation.Player.Weapons
             IImpactNavigator.Instance = this;
         }
 
-        public void AddImpact(Vector3 position, Vector3 normal)
+        public void AddImpact(Vector3 position, Vector3 normal, ImpactType type)
         {
             index += 1;
-            index %= impactPoolParticles.Count;
-            var impactTransform = impactPoolTransforms[index];
-            impactTransform.position = position;
-            impactTransform.LookAt(position + normal);
-            impactPoolParticles[index].Play();
+            index %= impactPool.Count;
+            impactPool[index].Play(position, normal, type);
         }
     }
 
@@ -30,6 +26,6 @@ namespace Shooter.presentation.Player.Weapons
     {
         public static IImpactNavigator Instance;
 
-        void AddImpact(Vector3 position, Vector3 normal);
+        void AddImpact(Vector3 position, Vector3 normal, ImpactType type);
     }
 }

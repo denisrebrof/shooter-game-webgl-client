@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Weapons_Beretta_57
+  m_EditorClassIdentifier: 
+  m_GroupName: Weapons_Beretta_57
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8c907008edea3364881ac4c40add4be8
+  m_SerializeEntries:
+  - m_GUID: 7fcaa58902933394d9b06ed3051c3990
+    m_Address: Assets/Export/Weapons/Beretta 57 Exp.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54e7cc0981b32244f8eaf68f2449173a
+    m_Address: Assets/Export/Weapons/Beretta 57 Other Variant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebfd2f28cb00add4d953e86f88456e7f
+    m_Address: Assets/Prefabs/Weapons/Beretta 57 Lobby.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de6844ac6ab2b7d4db50745c42612388
+    m_Address: Assets/Prefabs/Weapons/Beretta 57/Beretta 57 Lobby_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b9d20bae3363f394eb9c17f617f930a8
+    m_Address: Assets/Prefabs/Weapons/Beretta 57/Beretta 57 Other Variant_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 74a01cae11bce5946806ba5f6af5282e
+    m_Address: Assets/Prefabs/Weapons/Beretta 57/Beretta 57 Player_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8329208c4d97abe4db91a6ae6b355249, type: 2}
+    - {fileID: 11400000, guid: cf24c9c1e49ccad438bcc48b5a142a29, type: 2}

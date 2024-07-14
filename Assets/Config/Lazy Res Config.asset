@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007204931bd345359e464518d52829d2, type: 3}
+  m_Name: Lazy Res Config
+  m_EditorClassIdentifier: 
+  bundleName: basegameres
+  abProdAddress: 
+  abDebugAddress: 
+  useDebug: 0
+  useLocal: 0
+  editorBundleFolder: LocalBundle
+  defaultSize: 2048
+  materialSettings: []
+  data:
+    m_keys:
+    - Atlas1
+    - Atlas1_nmp
+    - Atlas1_ms
+    - Atlas1_AO
+    - Atlas1_illum
+    - Atlas1_m
+    - cubemap
+    - Grid1
+    - Grid1_nmp
+    - Grid1_ms
+    - Glows
+    - CharacterBakedAlbedoFixed
+    - CharacterBakedNoraml
+    - CharacterBakedMetallicSpecular
+    - CharacterBakedAlbedoOrange
+    m_values:
+    - texture: {fileID: 2800000, guid: d78b90fa9c0927a4e8e91b331a952a93, type: 3}
+      size: 256
+      slots:
+      - material: {fileID: 2100000, guid: f507550aa80f4ac42aa93ae68f991ed2, type: 2}
+        propertyName: _MainTex
+      - material: {fileID: 2100000, guid: f507550aa80f4ac42aa93ae68f991ed2, type: 2}
+        propertyName: _SpecTex
+    - texture: {fileID: 2800000, guid: 0a8e633b78e19804c80b2c1e1a9ca08b, type: 3}
+      size: 256
+      slots:
+      - material: {fileID: 2100000, guid: f507550aa80f4ac42aa93ae68f991ed2, type: 2}
+        propertyName: _BumpMap
+    - texture: {fileID: 2800000, guid: 8e2b262730de52d49a3108df1fef0aa9, type: 3}
+      size: 256
+      slots:
+      - material: {fileID: 2100000, guid: f507550aa80f4ac42aa93ae68f991ed2, type: 2}
+        propertyName: _SpecGlossMap
+    - texture: {fileID: 2800000, guid: 7a0e7da6fdefec44b85f92dfba6e3d7c, type: 3}
+      size: 256
+      slots:
+      - material: {fileID: 2100000, guid: f507550aa80f4ac42aa93ae68f991ed2, type: 2}
+        propertyName: _OcclusionMap
+    - texture: {fileID: 2800000, guid: b2c118e64b86cba43b8eeefb492ee3ae, type: 3}
+      size: 256
+      slots:
+      - material: {fileID: 2100000, guid: f507550aa80f4ac42aa93ae68f991ed2, type: 2}
+        propertyName: _EmissionMap
+      - material: {fileID: 2100000, guid: f507550aa80f4ac42aa93ae68f991ed2, type: 2}
+        propertyName: _Illum
+    - texture: {fileID: 2800000, guid: 027f5a7aea7109e4f8e7095c0a0928b3, type: 3}
+      size: 256
+      slots:
+      - material: {fileID: 2100000, guid: f507550aa80f4ac42aa93ae68f991ed2, type: 2}
+        propertyName: _MetallicGlossMap
+    - texture: {fileID: 8900000, guid: 214949ba6a7bf9a48a1d7d9174e1fe49, type: 3}
+      size: 256
+      slots:
+      - material: {fileID: 2100000, guid: f507550aa80f4ac42aa93ae68f991ed2, type: 2}
+        propertyName: _Cube
+      - material: {fileID: 2100000, guid: 3f6bd8abf47281a419f6733cc0d853bd, type: 2}
+        propertyName: _Cube
+    - texture: {fileID: 2800000, guid: 567f6940aad634a4b8afeb08c7cda1f5, type: 3}
+      size: 128
+      slots:
+      - material: {fileID: 2100000, guid: ae9cb62677c3ca745817d67c53759a0e, type: 2}
+        propertyName: _MainTex
+    - texture: {fileID: 2800000, guid: 83ec72748541638439af9e9a8e6033d2, type: 3}
+      size: 128
+      slots:
+      - material: {fileID: 2100000, guid: ae9cb62677c3ca745817d67c53759a0e, type: 2}
+        propertyName: _BumpMap
+    - texture: {fileID: 2800000, guid: 9e888bb0dba5ddf439798e0444569089, type: 3}
+      size: 128
+      slots:
+      - material: {fileID: 2100000, guid: ae9cb62677c3ca745817d67c53759a0e, type: 2}
+        propertyName: _MetallicGlossMap
+    - texture: {fileID: 2800000, guid: a9fdb96e96ac7584db7bcc813cdb98c1, type: 3}
+      size: 128
+      slots:
+      - material: {fileID: 2100000, guid: 3f6bd8abf47281a419f6733cc0d853bd, type: 2}
+        propertyName: _MainTex
+      - material: {fileID: 2100000, guid: 3f6bd8abf47281a419f6733cc0d853bd, type: 2}
+        propertyName: _EmissionMap
+      - material: {fileID: 2100000, guid: 3f6bd8abf47281a419f6733cc0d853bd, type: 2}
+        propertyName: _Illum
+    - texture: {fileID: 2800000, guid: 9f6f495406bba0e4e913a615a4983631, type: 3}
+      size: 128
+      slots:
+      - material: {fileID: 2100000, guid: 8fd7dc3ee46bf3249b225679e6dfc4cd, type: 2}
+        propertyName: _MainTex
+    - texture: {fileID: 2800000, guid: 99a02f1953031ec4298b04b952f09cc9, type: 3}
+      size: 128
+      slots:
+      - material: {fileID: 2100000, guid: 8fd7dc3ee46bf3249b225679e6dfc4cd, type: 2}
+        propertyName: _BumpMap
+      - material: {fileID: 2100000, guid: 3e2b0657fca5625448c6fb766beb7eaa, type: 2}
+        propertyName: _BumpMap
+    - texture: {fileID: 2800000, guid: 4078d7c0127f1e345b00a94cff6793d3, type: 3}
+      size: 128
+      slots:
+      - material: {fileID: 2100000, guid: 8fd7dc3ee46bf3249b225679e6dfc4cd, type: 2}
+        propertyName: _MetallicGlossMap
+      - material: {fileID: 2100000, guid: 3e2b0657fca5625448c6fb766beb7eaa, type: 2}
+        propertyName: _MetallicGlossMap
+    - texture: {fileID: 2800000, guid: fc6dc8443a1343740b9dc0a8464c8aad, type: 3}
+      size: 128
+      slots:
+      - material: {fileID: 2100000, guid: 3e2b0657fca5625448c6fb766beb7eaa, type: 2}
+        propertyName: _MainTex

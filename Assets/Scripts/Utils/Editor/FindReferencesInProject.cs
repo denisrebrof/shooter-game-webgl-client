@@ -1,70 +1,72 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
-public class FindReferencesInProject
+namespace Utils.Editor
 {
-    private const string MenuItemText = "Assets/Find References In Project";
-
-    [MenuItem(MenuItemText, false, 25)]
-    public static void Find()
+    public class FindReferencesInProject
     {
-        var sw = new System.Diagnostics.Stopwatch();
-        sw.Start();
+        private const string MenuItemText = "Assets/Find References In Project";
 
-        var referenceCache = new Dictionary<string, List<string>>();
-
-        string[] guids = AssetDatabase.FindAssets("");
-        foreach (string guid in guids)
+        [MenuItem(MenuItemText, false, 25)]
+        public static void Find()
         {
-            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
-            string[] dependencies = AssetDatabase.GetDependencies(assetPath, false);
+            var sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
 
-            foreach (var dependency in dependencies)
+            var referenceCache = new Dictionary<string, List<string>>();
+
+            string[] guids = AssetDatabase.FindAssets("");
+            foreach (string guid in guids)
             {
-                if (referenceCache.ContainsKey(dependency))
+                string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+                string[] dependencies = AssetDatabase.GetDependencies(assetPath, false);
+
+                foreach (var dependency in dependencies)
                 {
-                    if (!referenceCache[dependency].Contains(assetPath))
+                    if (referenceCache.ContainsKey(dependency))
                     {
-                        referenceCache[dependency].Add(assetPath);
+                        if (!referenceCache[dependency].Contains(assetPath))
+                        {
+                            referenceCache[dependency].Add(assetPath);
+                        }
+                    }
+                    else
+                    {
+                        referenceCache[dependency] = new List<string>(){ assetPath };
                     }
                 }
-                else
+            }
+
+            Debug.Log("Build index takes " + sw.ElapsedMilliseconds + " milliseconds");
+
+            string path = AssetDatabase.GetAssetPath(Selection.activeObject);
+            Debug.Log("Find: " + path, Selection.activeObject);
+            if (referenceCache.ContainsKey(path))
+            {
+                foreach (var reference in referenceCache[path])
                 {
-                    referenceCache[dependency] = new List<string>(){ assetPath };
+                    Debug.Log(reference, AssetDatabase.LoadMainAssetAtPath(reference));
                 }
             }
-        }
-
-        Debug.Log("Build index takes " + sw.ElapsedMilliseconds + " milliseconds");
-
-        string path = AssetDatabase.GetAssetPath(Selection.activeObject);
-        Debug.Log("Find: " + path, Selection.activeObject);
-        if (referenceCache.ContainsKey(path))
-        {
-            foreach (var reference in referenceCache[path])
+            else
             {
-                Debug.Log(reference, AssetDatabase.LoadMainAssetAtPath(reference));
+                Debug.LogWarning("No references");
             }
-        }
-        else
-        {
-            Debug.LogWarning("No references");
-        }
-        Debug.Log("---------------------------------------------------------------");
-        referenceCache.Clear();
-    }
-
-    [MenuItem(MenuItemText, true)]
-    public static bool Validate()
-    {
-        if (Selection.activeObject)
-        {
-            string path = AssetDatabase.GetAssetPath(Selection.activeObject);
-            return !AssetDatabase.IsValidFolder(path);
+            Debug.Log("---------------------------------------------------------------");
+            referenceCache.Clear();
         }
 
-        return false;
+        [MenuItem(MenuItemText, true)]
+        public static bool Validate()
+        {
+            if (Selection.activeObject)
+            {
+                string path = AssetDatabase.GetAssetPath(Selection.activeObject);
+                return !AssetDatabase.IsValidFolder(path);
+            }
+
+            return false;
+        }
     }
 }

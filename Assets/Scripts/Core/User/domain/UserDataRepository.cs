@@ -13,7 +13,7 @@ namespace Core.User.domain
         [Inject(Id = IWSCommandsUseCase.AuthorizedInstance)]
         private IWSCommandsUseCase commandsUseCase;
 
-        private Dictionary<long, UserData> userDataCache = new();
+        private readonly Dictionary<long, UserData> userDataCache = new();
 
         public IObservable<UserData> LoadUser(long playerId, bool cached = true)
         {

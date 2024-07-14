@@ -2,11 +2,11 @@
 
 namespace Shooter.presentation.Player.Weapons
 {
-    public class HandPoseAnimationProxy: MonoBehaviour
+    public class HandPoseAnimationProxy : MonoBehaviour
     {
         [SerializeField] private HandPoseController left;
         [SerializeField] private HandPoseController right;
-        
+
         public void SetTargetPose(string L_RTargets)
         {
             var targets = L_RTargets.Split('_');
@@ -18,7 +18,7 @@ namespace Shooter.presentation.Player.Weapons
         {
             left.targetPose = target;
         }
-        
+
         public void RSetTargetPose(string target)
         {
             right.targetPose = target;

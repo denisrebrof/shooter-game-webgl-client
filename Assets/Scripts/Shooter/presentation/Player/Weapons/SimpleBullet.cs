@@ -12,13 +12,23 @@ namespace Shooter.presentation.Player.Weapons
         [SerializeField] private float lifetime = 10f;
         [SerializeField] private float speed = 1f;
 
-        [CanBeNull] public Action ReturnToPool;
+        private LayerMask mask;
+
+        public long playerId; 
 
         private Vector3 prevPos;
 
-        private void OnDisable() => StopAllCoroutines();
+        [CanBeNull] public Action ReturnToPool;
 
-        public void Reset(Transform pos) => Reset(pos.position, pos.rotation);
+        private void Awake()
+        {
+            mask = LayerMask.GetMask("Default", "Player");
+        }
+
+        public void Reset(Transform pos)
+        {
+            Reset(pos.position, pos.rotation);
+        }
 
         public void Reset(Vector3 pos, Quaternion rot)
         {
@@ -26,6 +36,11 @@ namespace Shooter.presentation.Player.Weapons
             bullet.rotation = rot;
             prevPos = pos;
             StartCoroutine(Lifecycle());
+        }
+
+        private void OnDisable()
+        {
+            StopAllCoroutines();
         }
 
         private IEnumerator Lifecycle()
@@ -40,6 +55,7 @@ namespace Shooter.presentation.Player.Weapons
                 timer -= Time.deltaTime;
                 yield return null;
             }
+
             ReturnToPool?.Invoke();
         }
 
@@ -47,17 +63,20 @@ namespace Shooter.presentation.Player.Weapons
         {
             var shift = bullet.position - prevPos;
             var ray = new Ray(prevPos, shift);
-            if (!Physics.Raycast(ray, out var hit, shift.magnitude))
+            if (!Physics.Raycast(ray, out var hit, shift.magnitude, mask))
                 return;
 
-            HandleHit(hit);
-            IImpactNavigator.Instance.AddImpact(hit.point, hit.normal);
+            var isBotBullet = playerId < 0;
+            var hitCollider = hit.collider;
+            if(isBotBullet && hitCollider.CompareTag("Player"))
+                hitCollider
+                    .gameObject
+                    .GetComponent<PlayerBotHitHandler>()
+                    .HandleHit(playerId);
+                
+            var type = ImpactUtils.GetImpactType(hitCollider);
+            IImpactNavigator.Instance.AddImpact(hit.point, hit.normal, type);
             ReturnToPool?.Invoke();
-        }
-
-        protected virtual void HandleHit(RaycastHit hit)
-        {
-            //Empty
         }
     }
 }

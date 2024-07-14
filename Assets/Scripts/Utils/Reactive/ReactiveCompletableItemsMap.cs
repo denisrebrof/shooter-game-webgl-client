@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UniRx;
 
-namespace HNS.domain
+namespace Utils.Reactive
 {
     public class ReactiveCompletableItemsMap<TKey, TItem> where TKey : IEquatable<TKey>
     {

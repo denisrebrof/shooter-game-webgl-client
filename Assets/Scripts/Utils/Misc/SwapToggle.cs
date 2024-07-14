@@ -1,19 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SwapToggle : MonoBehaviour
+namespace Utils.Misc
 {
-    [SerializeField] private Toggle toggle;
-    [SerializeField] private Image baseGraphics;
-
-    private void Start()
+    public class SwapToggle : MonoBehaviour
     {
-        onChanged(toggle.isOn);
-        toggle.onValueChanged.AddListener(onChanged);
-    }
+        [SerializeField] private Toggle toggle;
+        [SerializeField] private Image baseGraphics;
 
-    private void onChanged(bool active)
-    {
-        baseGraphics.enabled = !active;
+        private void Start()
+        {
+            onChanged(toggle.isOn);
+            toggle.onValueChanged.AddListener(onChanged);
+        }
+
+        private void onChanged(bool active)
+        {
+            baseGraphics.enabled = !active;
+        }
     }
 }

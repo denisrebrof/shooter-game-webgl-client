@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Game_Common
+  m_EditorClassIdentifier: 
+  m_GroupName: Game_Common
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 530cf4b7224878041924d82f5bcd44f7
+  m_SerializeEntries:
+  - m_GUID: 7178009a59b47d44385e833bda688e76
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Effects/Impacts/P_IMP_Dirt.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e02303289b3c494e8e185be0fbbd405
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Effects/Impacts/P_IMP_Concrete.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a845e59c374ae0240812749e46f13033
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Effects/Impacts/P_IMP_Blood.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 79927c6543a058b4383885fac101fe2e
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Effects/Impacts/P_IMP_Metal.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2735bebe54c1f5a4096f5134a96f7e77
+    m_Address: Assets/Infima Games/Low Poly Shooter Pack/Prefabs/Effects/Particles/P_LPSP_WEP_Flash.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 054937f9c5eddd141899a7523d49b7d4
+    m_Address: Assets/Prefabs/Players/Player Current.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f2523f9d1d851f488f2f5194213524d
+    m_Address: Assets/Prefabs/Players/Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b51210ac5493f04c94c1cecc6054061
+    m_Address: Assets/PolygonWar/Models/SM_Veh_German_Halftrack_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8717904b7129f3468e4709cc1a8c726
+    m_Address: Assets/PolygonWar/Models/SM_Veh_Russian_Tank_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91dfdac66bde0e948ace6e71ca7dc82a
+    m_Address: Assets/PolygonWar/Models/SM_Veh_Russian_Tank_02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aafa423cde6ae1147811341fdafe4be4
+    m_Address: Assets/PolygonWar/Models/SM_Veh_German_Tank_Destroyed_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f71cd01a0755d39419b6d29f29b7ba54
+    m_Address: Assets/PolygonWar/Models/SM_Veh_Russian_Tank_Destroyed_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a768e58f2f982ca46a726944654034d6
+    m_Address: Assets/PolygonWar/Models/SM_Veh_Plane_Damaged_German_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56e96d7bea9f44042915df0dfce3ba87
+    m_Address: Assets/PolygonWar/Models/SM_Veh_Car_Damaged_02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f27a1c0c1f96b047963792968793990
+    m_Address: Assets/PolygonWar/Models/SM_Veh_Car_Damaged_01.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 09b10024a0a38fd468cf54093633e066, type: 2}
+    - {fileID: 11400000, guid: 16bc68967bd3cd3488faaf06feeefd29, type: 2}

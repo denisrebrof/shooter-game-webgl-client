@@ -11,17 +11,20 @@ namespace Shooter.presentation.Camera
     public class CameraController : MonoBehaviour
     {
         [Inject] private ICameraNavigator cameraNavigator;
-        [Inject] private CurrentPlayerStateUseCase playerStateUseCase;
         [Inject] private IGameStateRepository gameStateRepository;
+        [Inject] private CurrentPlayerStateUseCase playerStateUseCase;
 
         private IObservable<bool> PlayerAliveFlow => playerStateUseCase
             .GetStateFlow()
             .Select(data => data.alive);
 
-        private void Start() => gameStateRepository
+        private IObservable<GameStateTypes> StateTypeFlow => gameStateRepository
             .state
-            .Select(state => state.Type)
-            .CombineLatest(PlayerAliveFlow, GetCameraType)
+            .Select(state => state.Type);
+
+        private void Start() => Observable
+            // ReSharper disable once InvokeAsExtensionMethod
+            .CombineLatest(StateTypeFlow, PlayerAliveFlow, GetCameraType)
             .Subscribe(cameraNavigator.SetActiveCam)
             .AddTo(this);
 

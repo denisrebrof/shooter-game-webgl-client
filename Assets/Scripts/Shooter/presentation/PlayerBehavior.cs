@@ -20,7 +20,10 @@ namespace Shooter.presentation
         }
 
         protected IObservable<long> PlayerIdFlow => Provider.PlayerIdFlow;
-        
-        protected bool GetPlayerId(out long playerId) => Provider.GetPlayerId(out playerId);
+
+        protected bool GetPlayerId(out long playerId)
+        {
+            return Provider.GetPlayerId(out playerId);
+        }
     }
 }

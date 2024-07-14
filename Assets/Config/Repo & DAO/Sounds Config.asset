@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6faff9d239474f8b3746f417336828, type: 3}
+  m_Name: Sounds Config
+  m_EditorClassIdentifier: 
+  defaultClip: {fileID: 8300000, guid: e4172d28be24c644ca788cf7242b58e6, type: 3}
+  clips:
+    m_keys: 000000000100000002000000030000000400000005000000
+    m_values:
+    - {fileID: 8300000, guid: 521f6174afdbbef43a79cde1cc401ada, type: 3}
+    - {fileID: 8300000, guid: 31b594c45839a114ca54bf4c4c298e1d, type: 3}
+    - {fileID: 8300000, guid: 5a9b9677f8fc272428809c8b560195b1, type: 3}
+    - {fileID: 8300000, guid: 94803f7660503e846bb5a1dc9badac56, type: 3}
+    - {fileID: 8300000, guid: db2e1acd5c1a85648a02a509bc221128, type: 3}
+    - {fileID: 8300000, guid: db096c6c818cdc14e94d6e9f0a7c896c, type: 3}

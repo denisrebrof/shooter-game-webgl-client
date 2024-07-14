@@ -1,0 +1,307 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289df140feb2447aad6d3557707e9142, type: 3}
+  m_Name: WeaponPrefabs
+  m_EditorClassIdentifier: Shooter:Shooter.Presentation.Player:WeaponPrefabs
+  data:
+    m_keys: 00000000000000000100000000000000020000000000000003000000000000000500000000000000040000000000000006000000000000000700000000000000080000000000000009000000000000000a000000000000000b000000000000000d000000000000000c000000000000000e000000000000000f00000000000000
+    m_values:
+    - otherPrefab:
+        m_AssetGUID: 54e7cc0981b32244f8eaf68f2449173a
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: ebfd2f28cb00add4d953e86f88456e7f
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: 7fcaa58902933394d9b06ed3051c3990
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: -806098006, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 15
+    - otherPrefab:
+        m_AssetGUID: 31a725d8f2549294290371ed00605143
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 2d87ad1d5dedd674a93f69b722a81815
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: e09b592edf76c774899ba5e69ef25949
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: -477627865, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: bc91d684e0101e04a8443dae4a308d74
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 08883c162219e4d4eb7311c41a85410a
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: 70763e88a9a3ae848ad553f74bf2a72e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: 869180695, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: 094884b7ede05c84da7ac61b44943fb7
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: e40e726e79e47ba428d1136e44a71401
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: 70792947a0072e9408c997c7e0d9fae7
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: 1270805717, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: bfe13added4df8e4faa4436a533779f9
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 32b645728f74f6541925830af7f0d2ff
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: 09065ed74326a694d89bc8cb017759e2
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: -1215046601, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: 0a3e9d63c5b1498499754d7f78576c0a
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 03083fc579de4094eb3c453b907d1703
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: 26575accc2fbc844aaa428cc561ae0c6
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: 1046087087, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: b8e6d82a898776148bef4c9fc9304052
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 195719e5f1b737f41bf172449f815126
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: 4867c57f1baae054e9152756122ac174
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: -2061881195, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: 14b9bf015e575ea468b7b19f9fd12693
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 3d96833b17978cc4d9cb6383b9ed905e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: e97c1374ab4b99644b74191d24bea73d
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      icon: {fileID: 226055869, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: b9d20bae3363f394eb9c17f617f930a8
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: de6844ac6ab2b7d4db50745c42612388
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: 74a01cae11bce5946806ba5f6af5282e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: 1299539018, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: 63c7c725947ead347ba75a460f1ab4ae
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 6bdf7cbc663851f4297269566a9146cf
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: fc7e03c1103d53f409e1ee6bb64a5ddb
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: 922393485, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: 35e527b1a7e9b8c4089b280953a4d75e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: c72a4db1ff45df747b5c78e457c90d80
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: d530060fe20e4de4a9a516ca431e540a
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: -1732349415, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: e756e51c1004f5c4a94abbee42ee1050
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 5f545754b434c7c4c96078b6156f97c1
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: 9890eab0c6c781a4b93142a3ae002556
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: 611970059, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: f64f653ff9932fa4191f09f72fd17b80
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 139548568d6971c4ab62b64cbbc8fd43
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: ca2c8556873291647bdc3811d4ba458b
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: 373154098, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: 11c6f354eff280b418dba748d3633197
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: b4f4229845dbaa24b8444d1fd466cd8f
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: d3ed32259558bc746b66f248dd4e636f
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: -1338192832, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: 3c6712316b5a85443ac9324e8f67c8d6
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 08fad7c65c6d02144a9c9e08cf7b2715
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: c91d530e2f9a57a47961b7cf72313aa2
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: -691496644, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+    - otherPrefab:
+        m_AssetGUID: 1b3d116988115334d967a74a82eed8e7
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      lobbyPrefab:
+        m_AssetGUID: 5c72c2d164e1d0447ba588047d9478ce
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      playerPrefab:
+        m_AssetGUID: 68c51fbb0732eac49bb38970395c1d29
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      icon: {fileID: -672142202, guid: 5ded25e014808f84fab13b3a2e9610ca, type: 3}
+      damage: 100
+  defaultData:
+    otherPrefab:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    lobbyPrefab:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    playerPrefab:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+    icon: {fileID: 0}
+    damage: 0

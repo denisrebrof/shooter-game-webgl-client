@@ -7,17 +7,21 @@ TagManager:
   - PlayerCamera
   - Weapon
   - BulletSpawn
+  - OtherPlayer
+  - Metal
+  - Concrete
+  - Dirt
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
+  - Flags
+  - Map Collision
   - 
-  - 
-  - 
-  - 
+  - First Person View
   - 
   - 
   - 

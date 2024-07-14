@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Core.Localization;
+using Core.Sound.presentation;
 using Core.User.domain;
 using JetBrains.Annotations;
 using TMPro;
@@ -22,6 +23,7 @@ namespace Core.User.presentation
         [SerializeField] private GameObject errorMark;
         [SerializeField] private UnityEvent onSuccessfulChangeUserName;
 
+        [Inject] private PlaySoundNavigator playSoundNavigator;
         [Inject] private ICurrentUserNameRepository currentUserNameRepository;
         [Inject] private ValidateUserNameUseCase validateUserNameUseCase;
         [Inject] private ILanguageProvider languageProvider;
@@ -87,7 +89,9 @@ namespace Core.User.presentation
         private void SubmitUserName()
         {
             var userName = editNameField.text;
-            if (validateUserNameUseCase.Validate(userName) != UserNameValidState.Valid)
+            var userNameInvalid = validateUserNameUseCase.Validate(userName) != UserNameValidState.Valid;
+            playSoundNavigator.Play(userNameInvalid ? SoundType.Warning : SoundType.ButtonOk);
+            if (userNameInvalid)
                 return;
 
             confirmButton.interactable = false;

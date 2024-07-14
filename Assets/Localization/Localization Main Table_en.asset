@@ -1,0 +1,302 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Localization Main Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: ebe975666d31d2845a740672f4af78ae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 92447739904
+    m_Localized: player
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178284171264
+    m_Localized: loadout
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252175224832
+    m_Localized: game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365270437888
+    m_Localized: set nick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 478285959168
+    m_Localized: REWARDS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502541619200
+    m_Localized: purchase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16555145465856
+    m_Localized: next reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16899887894528
+    m_Localized: rating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16947212226560
+    m_Localized: ready for play...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19445041893376
+    m_Localized: 'WEAPON
+
+      STORE'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19573811220480
+    m_Localized: Quick Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19663682572288
+    m_Localized: Games List
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25307236044800
+    m_Localized: Connecting with server...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25466816729088
+    m_Localized: Connection failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25522206707712
+    m_Localized: Try launch game again later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27781074292736
+    m_Localized: Disconnection from server
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37319332630528
+    m_Localized: Searching game...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37492930678784
+    m_Localized: Stop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373377857523712
+    m_Localized: Loading...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 717966669811712
+    m_Localized: Team Deathmatch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 718075868516352
+    m_Localized: 'Teams kills each other until timer expires
+
+      Make more kills
+      than enemy to win!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721311576920064
+    m_Localized: statistics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 723585476890624
+    m_Localized: Kills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 723650509574144
+    m_Localized: Death
+    m_Metadata:
+      m_Items: []
+  - m_Id: 724096632524800
+    m_Localized: Nickname
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727147892215808
+    m_Localized: Your team loss!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727128141238272
+    m_Localized: Your team won!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727096184836096
+    m_Localized: Game finished
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728273324642304
+    m_Localized: You will be returned to lobby automatically...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 730488890232832
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 730831078330368
+    m_Localized: 'Controls
+
+
+      WASD - Movement
+
+      Shift - Running
+
+      R
+      - Reloading
+
+      C - Crouching
+
+      Scroll - Switch Weapon
+
+      Tab -
+      Match Statistics'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 731693502730240
+    m_Localized: Sound On
+    m_Metadata:
+      m_Items: []
+  - m_Id: 731716902752256
+    m_Localized: Sound Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 732502319730688
+    m_Localized: Leave match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10558401198198784
+    m_Localized: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10558403698003968
+    m_Localized: Main Weapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10558405140844544
+    m_Localized: Sec. Weapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18114801784885248
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18165675563454464
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18166459181076480
+    m_Localized: Change nick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18167833478336512
+    m_Localized: USERNAME CHANGED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18167884753702912
+    m_Localized: 'You successfully updated username
+
+      It will be shown in games
+      & leaderboard'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18227701153304576
+    m_Localized: Upcoming Rewards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18227744774066176
+    m_Localized: You claimed all rewards!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18232101934501888
+    m_Localized: LV $
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18802090836004864
+    m_Localized: More...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18837520566489088
+    m_Localized: Level $ rewards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18865648479277056
+    m_Localized: USSR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18865695367401472
+    m_Localized: Germany
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18869518622298112
+    m_Localized: STATISTICS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18873153343229952
+    m_Localized: K/D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18874228636946432
+    m_Localized: K
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18874259465080832
+    m_Localized: D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18874287512391680
+    m_Localized: K/D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20049739245457408
+    m_Localized: Winning!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20049790327885824
+    m_Localized: Losing!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21046198086438912
+    m_Localized: 'No active games yet...
+
+
+      Press "Quick Play" in main menu
+      to create one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21049253150363648
+    m_Localized: Join
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21049295768686592
+    m_Localized: Full
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21049371865944064
+    m_Localized: Battle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21524971319758848
+    m_Localized: 'Your team:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27650227979673600
+    m_Localized: You have Flag!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27650291208806400
+    m_Localized: Reach you team base with it to increase team score!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

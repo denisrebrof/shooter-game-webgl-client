@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532d6ca4b9dfd794eb0118a3f70bdfbf, type: 3}
+  m_Name: FavouritesAsset
+  m_EditorClassIdentifier: 
+  favs:
+  - categoryId: 0
+    obj: {fileID: 102900000, guid: 6171a0f758a2a884483dfc637ae2de34, type: 3}
+  - categoryId: 0
+    obj: {fileID: 102900000, guid: 7ef028880707fa0439c5b2f48a8d65b3, type: 3}
+  - categoryId: 0
+    obj: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+  - categoryId: 0
+    obj: {fileID: 1888241031545551937, guid: 054937f9c5eddd141899a7523d49b7d4, type: 3}
+  - categoryId: 0
+    obj: {fileID: 2685008886507838750, guid: 7f2523f9d1d851f488f2f5194213524d, type: 3}
+  - categoryId: 3
+    obj: {fileID: 11400000, guid: 4b3cbe5e14b95a540a1ffb68d0a6beb0, type: 2}
+  - categoryId: 0
+    obj: {fileID: 11400000, guid: bd51d2e3e2dd39043bd688cb79393047, type: 2}
+  - categoryId: 0
+    obj: {fileID: 102900000, guid: 51925a7a75d313245afc06de3e4eb5c1, type: 3}
+  - categoryId: 0
+    obj: {fileID: 102900000, guid: 46b16ae5f437ce04db0825007c7c2fe9, type: 3}
+  categories:
+  - id: 0
+    name: Main
+  - id: 3
+    name: Weapons
+  nextCategoryId: 4

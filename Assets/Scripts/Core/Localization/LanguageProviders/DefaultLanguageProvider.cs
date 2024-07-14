@@ -2,6 +2,6 @@
 {
     public class DefaultLanguageProvider: ILanguageProvider
     {
-        public Language GetCurrentLanguage() => Language.English;
+        public Language GetCurrentLanguage() => Language.Russian;
     }
 }

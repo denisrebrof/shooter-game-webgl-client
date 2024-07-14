@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Weapons_Gewehr_43
+  m_EditorClassIdentifier: 
+  m_GroupName: Weapons_Gewehr_43
+  m_Data:
+    m_SerializedData: []
+  m_GUID: f9d2f0242cf3bb148aacf36c3603355d
+  m_SerializeEntries:
+  - m_GUID: e09b592edf76c774899ba5e69ef25949
+    m_Address: Assets/Export/Weapons/Gewehr 43 Exp.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31a725d8f2549294290371ed00605143
+    m_Address: Assets/Export/Weapons/Gewehr 43 Other Variant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d87ad1d5dedd674a93f69b722a81815
+    m_Address: Assets/Prefabs/Weapons/Gewehr 43 Lobby.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6bdf7cbc663851f4297269566a9146cf
+    m_Address: Assets/Prefabs/Weapons/Gewehr 43/Gewehr 43 Lobby_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 63c7c725947ead347ba75a460f1ab4ae
+    m_Address: Assets/Prefabs/Weapons/Gewehr 43/Gewehr 43 Other Variant_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc7e03c1103d53f409e1ee6bb64a5ddb
+    m_Address: Assets/Prefabs/Weapons/Gewehr 43/Gewehr 43 Player_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e668a16a80b8ce1418082a1f782eadb8, type: 2}
+    - {fileID: 11400000, guid: 0a961143ed750214c838feebb9d5fd86, type: 2}

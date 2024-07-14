@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Weapons_MP40
+  m_EditorClassIdentifier: 
+  m_GroupName: Weapons_MP40
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 793dd00b5a9f2b649a1b2917b51a2555
+  m_SerializeEntries:
+  - m_GUID: 70763e88a9a3ae848ad553f74bf2a72e
+    m_Address: Assets/Export/Weapons/MP 40 Exp.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc91d684e0101e04a8443dae4a308d74
+    m_Address: Assets/Export/Weapons/MP 40 Other Variant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08883c162219e4d4eb7311c41a85410a
+    m_Address: Assets/Prefabs/Weapons/MP 40 Lobby.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c72a4db1ff45df747b5c78e457c90d80
+    m_Address: Assets/Prefabs/Weapons/MP 40/MP 40 Lobby_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35e527b1a7e9b8c4089b280953a4d75e
+    m_Address: Assets/Prefabs/Weapons/MP 40/MP 40 Other Variant_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d530060fe20e4de4a9a516ca431e540a
+    m_Address: Assets/Prefabs/Weapons/MP 40/MP 40 Player_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 02f2623099b463941a81700cf3a5db55, type: 2}
+    - {fileID: 11400000, guid: a24371bfa5b4f014f91bd5adee733f04, type: 2}

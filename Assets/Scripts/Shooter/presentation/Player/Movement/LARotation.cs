@@ -11,16 +11,16 @@ namespace Shooter.presentation.Player.Movement
 
         private Quaternion currentRotation;
 
-        private void OnEnable()
-        {
-            currentRotation = Quaternion.Euler(targetRotation + offset);
-        }
-    
         private void LateUpdate()
         {
             var targetRot = Quaternion.Euler(targetRotation + offset);
             currentRotation = Quaternion.Slerp(currentRotation, targetRot, Time.deltaTime / damping);
             target.localRotation = currentRotation;
+        }
+
+        private void OnEnable()
+        {
+            currentRotation = Quaternion.Euler(targetRotation + offset);
         }
     }
 }

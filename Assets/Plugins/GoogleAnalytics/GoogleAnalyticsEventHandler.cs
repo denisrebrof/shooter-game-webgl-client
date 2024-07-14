@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Plugins.GoogleAnalytics
@@ -7,6 +8,12 @@ namespace Plugins.GoogleAnalytics
         [SerializeField] private string eventName;
         [SerializeField] private string eventArgName;
         [SerializeField] private string eventArgValue;
+        [SerializeField] private bool sendOnStart;
+
+        private void Start()
+        {
+            if (sendOnStart) Send();
+        }
 
         public void Send()
         {

@@ -5,8 +5,8 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - target: {instanceID: 0}
-  - redTeamMaterial: {fileID: 2100000, guid: a2794fe88a7985c45822a762852ccce3, type: 2}
-  - blueTeamMaterial: {fileID: 2100000, guid: af06dbfe773ddb54e935218ecfadbec3, type: 2}
+  - redTeamMaterial: {instanceID: 0}
+  - blueTeamMaterial: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

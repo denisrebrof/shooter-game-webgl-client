@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Weapons_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 4c045df02d1c9ba4b9fed4ec71261a22, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 48038449152
+    m_Localized: Beretta 57
+    m_Metadata:
+      m_Items: []
+  - m_Id: 144650047488
+    m_Localized: Gewehr 43
+    m_Metadata:
+      m_Items: []
+  - m_Id: 510003286016
+    m_Localized: MP 40
+    m_Metadata:
+      m_Items: []
+  - m_Id: 664122986496
+    m_Localized: PPSH 41
+    m_Metadata:
+      m_Items: []
+  - m_Id: 742103486464
+    m_Localized: STG 44
+    m_Metadata:
+      m_Items: []
+  - m_Id: 853554532352
+    m_Localized: SKS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 911184269312
+    m_Localized: Tokarev
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1018592006144
+    m_Localized: Walter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970215887179776
+    m_Localized: The Model 57 was an Italian assault rifle produced by Beretta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970270408937472
+    m_Localized: The Gewehr 43 is a semi-automatic rifle developed by Germany.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970331457032192
+    m_Localized: "The MP 40 is a submachine gun chambered for the 9\xD719mm cartridge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970420007178240
+    m_Localized: The PPSh-41 is a selective-fire, open-bolt, blowback submachine
+      gun.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970448952070144
+    m_Localized: The StG 44 is a German assault rifle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970647174877184
+    m_Localized: The SKS is a Soviet semi-automatic rifle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970702808125440
+    m_Localized: The TT-30, commonly known simply as the Tokarev, is a Soviet semi-automatic
+      pistol.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970731161620480
+    m_Localized: The Walther PP series pistols are blowback-operated semi-automatic
+      pistols.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518274645364736
+    m_Localized: Beretta 57 Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518293138051072
+    m_Localized: Gewehr 43 Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518326306607104
+    m_Localized: MP 40 Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518328340844544
+    m_Localized: PPSH 41 Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518385702146048
+    m_Localized: STG 44 Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518652812201984
+    m_Localized: SKS Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518724362833920
+    m_Localized: Tokarev Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518855178981376
+    m_Localized: Walter Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519523365163008
+    m_Localized: The Model 57 was an Italian assault rifle produced by Beretta.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519557427105792
+    m_Localized: The Gewehr 43 is a semi-automatic rifle developed by Germany.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519595528163328
+    m_Localized: "The MP 40 is a submachine gun chambered for the 9\xD719mm cartridge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519633566306304
+    m_Localized: The PPSh-41 is a selective-fire, open-bolt, blowback submachine
+      gun.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519697252618240
+    m_Localized: The StG 44 is a German assault rifle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519721298563072
+    m_Localized: The SKS is a Soviet semi-automatic rifle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519771810566144
+    m_Localized: The TT-30, commonly known simply as the Tokarev, is a Soviet semi-automatic
+      pistol.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519811002142720
+    m_Localized: The Walther PP series pistols are blowback-operated semi-automatic
+      pistols.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

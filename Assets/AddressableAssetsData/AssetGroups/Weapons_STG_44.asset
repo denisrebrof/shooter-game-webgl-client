@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Weapons_STG_44
+  m_EditorClassIdentifier: 
+  m_GroupName: Weapons_STG_44
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 64e28000c574cfe4b935e823c1c8551a
+  m_SerializeEntries:
+  - m_GUID: 09065ed74326a694d89bc8cb017759e2
+    m_Address: Assets/Export/Weapons/STG 44 Exp.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfe13added4df8e4faa4436a533779f9
+    m_Address: Assets/Export/Weapons/STG Other Variant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 32b645728f74f6541925830af7f0d2ff
+    m_Address: Assets/Prefabs/Weapons/STG 44 Lobby.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca2c8556873291647bdc3811d4ba458b
+    m_Address: Assets/Prefabs/Weapons/STG 44/STG 44 Player_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 139548568d6971c4ab62b64cbbc8fd43
+    m_Address: Assets/Prefabs/Weapons/STG 44/STG 44 Lobby_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f64f653ff9932fa4191f09f72fd17b80
+    m_Address: Assets/Prefabs/Weapons/STG 44/STG 44 Other Variant_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: dedb5938aa0122f4e94e08e29888f733, type: 2}
+    - {fileID: 11400000, guid: cfa7e0ac22f0c37458bd64104a41328a, type: 2}

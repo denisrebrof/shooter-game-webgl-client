@@ -9,6 +9,7 @@ namespace Core.Sound.presentation
     [RequireComponent(typeof(Toggle))]
     public class SimpleSoundToggle : MonoBehaviour
     {
+        [Inject] private PlaySoundNavigator playSoundNavigator;
         [Inject] private ISoundPrefsRepository repository;
         [SerializeField] private AudioMixer mixer;
 
@@ -29,6 +30,7 @@ namespace Core.Sound.presentation
             Debug.Log("UpdateAudio: " + state);
             mixer.SetFloat("MasterVolume", state ? 0 : -80);
             repository.SetSoundEnabledState(state);
+            playSoundNavigator.Play(SoundType.ButtonOk);
         }
     }
 }

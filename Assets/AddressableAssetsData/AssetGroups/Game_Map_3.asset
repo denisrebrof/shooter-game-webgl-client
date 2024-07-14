@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Game_Map_3
+  m_EditorClassIdentifier: 
+  m_GroupName: Game_Map_3
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 24fed7c7ab1e96e449ebe7ff3478efcc
+  m_SerializeEntries:
+  - m_GUID: 46b16ae5f437ce04db0825007c7c2fe9
+    m_Address: Assets/Scenes/GameDesert.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 224231b756ce1b745914cd5576b53fe7, type: 2}
+    - {fileID: 11400000, guid: dd70f4ea0de17f045953b7e5cdeae51e, type: 2}

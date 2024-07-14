@@ -1,0 +1,19 @@
+{
+    "name": "LazyResourcesEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7db0ec06f687b9c4b9053cfbbe276f7c",
+        "GUID:9233fc93c3cb421ea49a2604ded5e2e0"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

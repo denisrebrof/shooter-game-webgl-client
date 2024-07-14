@@ -35,6 +35,7 @@ namespace Features.Lobby.presentation
         private struct MatchData
         {
             public string id;
+            public int mapId;
             public long createdTime;
             public long[] participantIds;
         }

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Weapons_PPSH
+  m_EditorClassIdentifier: 
+  m_GroupName: Weapons_PPSH
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c5cf472f2804d584bbe65c13e7fb2e3d
+  m_SerializeEntries:
+  - m_GUID: 70792947a0072e9408c997c7e0d9fae7
+    m_Address: Assets/Export/Weapons/PSH 41 Exp.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 094884b7ede05c84da7ac61b44943fb7
+    m_Address: Assets/Export/Weapons/PPSH Other Variant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e40e726e79e47ba428d1136e44a71401
+    m_Address: Assets/Prefabs/Weapons/PPSH 41 Lobby.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f545754b434c7c4c96078b6156f97c1
+    m_Address: Assets/Prefabs/Weapons/PPSH 41/PPSH 41 Lobby_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e756e51c1004f5c4a94abbee42ee1050
+    m_Address: Assets/Prefabs/Weapons/PPSH 41/PPSH 41 Other Variant_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9890eab0c6c781a4b93142a3ae002556
+    m_Address: Assets/Prefabs/Weapons/PPSH 41/PPSH 41 Player_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b50fae05fb3d19e40817861405fb9c43, type: 2}
+    - {fileID: 11400000, guid: 9e233a10c32d97c4d9b1301c78c4b2fb, type: 2}

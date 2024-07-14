@@ -1,4 +1,4 @@
-﻿namespace Features.Levels.data
+﻿namespace Features.Levels.data.dao
 {
     public interface ILevelCompletedStateDao
     {

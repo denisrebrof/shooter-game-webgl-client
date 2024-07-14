@@ -1,5 +1,5 @@
 ﻿using System;
-using Core.Analytics.levels;
+using Features.Levels.domain.model;
 using Plugins.GoogleAnalytics;
 
 namespace Features.Levels.data

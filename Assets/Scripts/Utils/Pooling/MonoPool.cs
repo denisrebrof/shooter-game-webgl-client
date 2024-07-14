@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace Utils.Pooling
@@ -54,9 +57,20 @@ namespace Utils.Pooling
             return spawnedItem;
         }
 
+#if UNITY_EDITOR
+        private T CreatePoolItemEditor()
+        {
+            var spawnedPrefab = PrefabUtility.InstantiatePrefab(itemPrefab.gameObject, root) as GameObject;
+            var spawnedItem = spawnedPrefab.GetComponent<T>();
+            spawnedItem.OnReturnToPool();
+            return spawnedItem;
+        }
+#endif
+
         [ContextMenu("Generate")]
         protected void Generate()
         {
+#if UNITY_EDITOR
             while (root.childCount > 0)
             {
                 var existingChild = root.GetChild(0).gameObject;
@@ -66,10 +80,13 @@ namespace Utils.Pooling
             items = new List<T>();
             for (var i = 0; i < poolSize; i++)
             {
-                var spawnedItem = CreatePoolItem();
+                var spawnedItem = CreatePoolItemEditor();
                 DestroyAutoInjector(spawnedItem.gameObject);
                 items.Add(spawnedItem);
             }
+
+            EditorApplication.MarkSceneDirty();
+#endif
         }
 
         private void DestroyAutoInjector(GameObject go) => go

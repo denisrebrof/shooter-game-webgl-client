@@ -4,7 +4,9 @@
     "references": [],
     "includePlatforms": [
         "Editor",
-        "WebGL"
+        "WebGL",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

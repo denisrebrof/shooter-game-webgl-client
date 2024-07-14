@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Weapons Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Weapons
+  m_TableCollectionNameGuidString: 4c045df02d1c9ba4b9fed4ec71261a22
+  m_Entries:
+  - m_Id: 48038449152
+    m_Key: beretta_57
+    m_Metadata:
+      m_Items: []
+  - m_Id: 144650047488
+    m_Key: gewehr_43
+    m_Metadata:
+      m_Items: []
+  - m_Id: 510003286016
+    m_Key: mp_40
+    m_Metadata:
+      m_Items: []
+  - m_Id: 664122986496
+    m_Key: ppsh_41
+    m_Metadata:
+      m_Items: []
+  - m_Id: 742103486464
+    m_Key: stg_44
+    m_Metadata:
+      m_Items: []
+  - m_Id: 853554532352
+    m_Key: sks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 911184269312
+    m_Key: tokarev
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1018592006144
+    m_Key: walter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970215887179776
+    m_Key: beretta_57_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970270408937472
+    m_Key: gewehr_43_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970331457032192
+    m_Key: mp_40_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970420007178240
+    m_Key: ppsh_41_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970448952070144
+    m_Key: 'stg_44_description
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970647174877184
+    m_Key: sks_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970702808125440
+    m_Key: tokarev_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10970731161620480
+    m_Key: walter_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518274645364736
+    m_Key: beretta_57_gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518293138051072
+    m_Key: gewehr_43_gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518326306607104
+    m_Key: mp_40_gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518328340844544
+    m_Key: ppsh_41_gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518385702146048
+    m_Key: stg_44_gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518652812201984
+    m_Key: sks_gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518724362833920
+    m_Key: tokarev_gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17518855178981376
+    m_Key: walter_gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519523365163008
+    m_Key: beretta_57_gold_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519557427105792
+    m_Key: gewehr_43_gold_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519595528163328
+    m_Key: mp_40_gold_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519633566306304
+    m_Key: ppsh_41_gold_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519697252618240
+    m_Key: stg_44_gold_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519721298563072
+    m_Key: sks_gold_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519771810566144
+    m_Key: tokarev_gold_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17519811002142720
+    m_Key: walter_gold_description
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6323738149928566786
+  references:
+    version: 2
+    RefIds:
+    - rid: 6323738149928566786
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1713421645462

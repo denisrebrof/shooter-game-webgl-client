@@ -1,0 +1,280 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Localization Main Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Localization Main Table
+  m_TableCollectionNameGuidString: ebe975666d31d2845a740672f4af78ae
+  m_Entries:
+  - m_Id: 92447739904
+    m_Key: player
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178284171264
+    m_Key: loadout
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252175224832
+    m_Key: game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 365270437888
+    m_Key: set_nick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 478285959168
+    m_Key: rewards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 502541619200
+    m_Key: purchase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16555145465856
+    m_Key: next_reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16899887894528
+    m_Key: rating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16947212226560
+    m_Key: ready_for_play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19445041893376
+    m_Key: store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19573811220480
+    m_Key: quick_play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19663682572288
+    m_Key: games_list
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25307236044800
+    m_Key: connection_to_server
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25466816729088
+    m_Key: connection_failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25522206707712
+    m_Key: connection_failed_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27781074292736
+    m_Key: disconnected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37319332630528
+    m_Key: game_search_in_progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37492930678784
+    m_Key: stop_game_search
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373377857523712
+    m_Key: loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 717966669811712
+    m_Key: team_deathmatch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 718075868516352
+    m_Key: team_deathmatch_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721311576920064
+    m_Key: stats_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 723585476890624
+    m_Key: kills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 723650509574144
+    m_Key: death
+    m_Metadata:
+      m_Items: []
+  - m_Id: 724096632524800
+    m_Key: nickname
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727096184836096
+    m_Key: game_finished
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727128141238272
+    m_Key: team_won
+    m_Metadata:
+      m_Items: []
+  - m_Id: 727147892215808
+    m_Key: team loss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 728273324642304
+    m_Key: auto_return_tip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 730488890232832
+    m_Key: pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 730831078330368
+    m_Key: controls_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 731693502730240
+    m_Key: sound_on
+    m_Metadata:
+      m_Items: []
+  - m_Id: 731716902752256
+    m_Key: sound_off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 732502319730688
+    m_Key: leave_match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10558401198198784
+    m_Key: required_level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10558403698003968
+    m_Key: primary_weapon_slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10558405140844544
+    m_Key: secondary_weapon_slot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18114801784885248
+    m_Key: cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18165675563454464
+    m_Key: confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18166459181076480
+    m_Key: change_nick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18167833478336512
+    m_Key: username_changed_notification_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18167884753702912
+    m_Key: username_changed_notification_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18227701153304576
+    m_Key: upcoming_rewards_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18227744774066176
+    m_Key: upcoming_rewards_empty_stub
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18232101934501888
+    m_Key: level_short_replacer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18802090836004864
+    m_Key: more
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18837520566489088
+    m_Key: claim_rewards_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18865648479277056
+    m_Key: ussr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18865695367401472
+    m_Key: Germany
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18869518622298112
+    m_Key: player_stats_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18873153343229952
+    m_Key: kd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18874228636946432
+    m_Key: kills_letter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18874259465080832
+    m_Key: death_letter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18874287512391680
+    m_Key: kd_letter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20049739245457408
+    m_Key: winning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20049790327885824
+    m_Key: losing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21046198086438912
+    m_Key: no_active_games_stub
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21049253150363648
+    m_Key: game_join
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21049295768686592
+    m_Key: game_full
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21049371865944064
+    m_Key: game_list_prefix
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21524971319758848
+    m_Key: your_team
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27650227979673600
+    m_Key: has_flag_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27650291208806400
+    m_Key: has_flag_desc
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6323737964887670808
+  references:
+    version: 2
+    RefIds:
+    - rid: 6323737964887670808
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1712575233866

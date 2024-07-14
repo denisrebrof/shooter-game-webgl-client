@@ -51,9 +51,18 @@ namespace Utils.WebSocketClient.domain
         {
             var type = typeof(T);
             var isPrimitiveType = type.IsPrimitive || type == typeof(string);
-            return !isPrimitiveType
-                ? JsonUtility.FromJson<T>(source)
-                : (T)Convert.ChangeType(source, typeof(T));
+            try
+            {
+                return !isPrimitiveType
+                    ? JsonUtility.FromJson<T>(source)
+                    : (T)Convert.ChangeType(source, typeof(T));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            
         }
     }
 }

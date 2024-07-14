@@ -1,9 +1,10 @@
 ﻿using System;
 using Features.Lobby.domain.model;
 using JetBrains.Annotations;
+using Michsky.MUIP;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Localization;
 using Utils.Pooling;
 
 namespace Features.Lobby.presentation
@@ -12,8 +13,10 @@ namespace Features.Lobby.presentation
     {
         [SerializeField] private TMP_Text title;
         [SerializeField] private TMP_Text participantsCounter;
-        [SerializeField] private GameObject gameFullIndicator;
-        [SerializeField] private Button joinButton;
+        [SerializeField] private ButtonManager joinButton;
+        [SerializeField] private LocalizedString joinText;
+        [SerializeField] private LocalizedString fullText;
+        [SerializeField] private LocalizedString gamePrefixText;
 
         [CanBeNull] private Action onClickJoinAction;
 
@@ -23,11 +26,12 @@ namespace Features.Lobby.presentation
 
         public void Setup(GameListItemData data, Action onClickJoin)
         {
-            title.text = "Match # " + TruncateLongString(data.matchId, 6);
+            title.text = gamePrefixText.GetLocalizedString() + " # " + TruncateLongString(data.matchId, 6);
             participantsCounter.text = $"{data.currentParticipants}/{data.maxParticipants}";
             var isFull = data.currentParticipants >= data.maxParticipants;
-            gameFullIndicator.SetActive(isFull);
-            joinButton.gameObject.SetActive(!isFull);
+            var buttonText = isFull ? fullText : joinText;
+            joinButton.buttonText = buttonText.GetLocalizedString();
+            joinButton.Interactable(!isFull);
             onClickJoinAction = onClickJoin;
         }
 

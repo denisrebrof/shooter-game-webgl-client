@@ -8,17 +8,19 @@ namespace Shooter.presentation.Player
 {
     public class CurrentPlayerKilledStateObserver : MonoBehaviour
     {
+        [SerializeField] private Transform playerCam;
+        [SerializeField] private Transform character;
         [Inject] private CurrentPlayerAliveStateUpdatesUseCase aliveStateUpdatesUseCase;
 
         [Inject] private KilledCameraController killedCameraController;
 
-        [SerializeField] private Transform playerCam;
-        [SerializeField] private Transform character;
-
-        private void Start() => aliveStateUpdatesUseCase
-            .GetAliveStateUpdatesFlow()
-            .Subscribe(OnAliveStateUpdate)
-            .AddTo(this);
+        private void Start()
+        {
+            aliveStateUpdatesUseCase
+                .GetAliveStateUpdatesFlow()
+                .Subscribe(OnAliveStateUpdate)
+                .AddTo(this);
+        }
 
         private void OnAliveStateUpdate(AliveStateUpdate update)
         {
@@ -27,7 +29,7 @@ namespace Shooter.presentation.Player
             character.position = pos;
             character.rotation = rot;
             gameObject.SetActive(update.Alive);
-            if (update.Alive) killedCameraController.StopFlying(); 
+            if (update.Alive) killedCameraController.StopFlying();
             else killedCameraController.FlyAway(playerCam);
         }
     }

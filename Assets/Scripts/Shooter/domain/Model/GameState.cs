@@ -7,10 +7,11 @@ namespace Shooter.domain.Model
     public struct GameState
     {
         public int typeCode;
+        public int playersHash;
         public List<PlayerData> playerData;
         public int winnerTeamId;
-        public int redTeamKills;
-        public int blueTeamKills;
+        public TeamData redTeamState;
+        public TeamData blueTeamState;
 
         public GameStateTypes Type
         {
@@ -36,6 +37,16 @@ namespace Shooter.domain.Model
     }
 
     [Serializable]
+    public struct TeamData
+    {
+        public int teamFlags;
+        public int teamKills;
+        public TransformSnapshot flagPos;
+        public bool flagHasOwner;
+        public long flagOwnerId;
+    }
+
+    [Serializable]
     public struct PlayerData
     {
         public long playerId;
@@ -47,6 +58,8 @@ namespace Shooter.domain.Model
         public TransformSnapshot pos;
         public float verticalLookAngle;
         public long selectedWeaponId;
+        public bool crouching;
+        public bool jumping;
 
         public Teams Team
         {
@@ -58,6 +71,8 @@ namespace Shooter.domain.Model
                 return Teams.Undefined;
             }
         }
+
+        public bool IsBot => playerId < 0;
     }
 
     public enum GameStateTypes

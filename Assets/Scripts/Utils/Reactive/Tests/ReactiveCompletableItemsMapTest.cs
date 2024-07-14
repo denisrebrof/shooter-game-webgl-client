@@ -1,4 +1,3 @@
-using HNS.domain;
 using NUnit.Framework;
 using UniRx;
 

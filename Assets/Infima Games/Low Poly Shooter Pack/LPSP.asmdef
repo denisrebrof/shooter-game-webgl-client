@@ -1,0 +1,21 @@
+{
+    "name": "LPSP",
+    "rootNamespace": "",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:e2abdef7357cebb4e82f7f798975ffed",
+        "GUID:ac72e8ca82f52654da053775fe2ea22f",
+        "GUID:696a0953692949b40bec8730e64e1fdd",
+        "GUID:7cf699f2b379fc94bbc0d47900a64646"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

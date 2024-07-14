@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Shooter.presentation.Canvases;
+using Shooter.presentation.UI.Game;
 using UnityEngine;
 using Zenject;
 
@@ -7,14 +7,17 @@ namespace Shooter.presentation.Camera
 {
     public class MultiCameraSource : MonoBehaviour, ICameraView
     {
-        [Inject] private ICameraRepository cameraRepository;
-        [Inject] private ICanvasNavigator canvasNavigator;
         [SerializeField] private List<UnityEngine.Camera> cameras = new();
         [SerializeField] private AudioListener listener;
         [SerializeField] private CameraType type;
         [SerializeField] private CanvasType canvasType = CanvasType.None;
+        [Inject] private ICameraRepository cameraRepository;
+        [Inject] private ICanvasNavigator canvasNavigator;
 
-        private void Start() => cameraRepository.SetCamera(this, type);
+        private void Start()
+        {
+            cameraRepository.SetCamera(this, type);
+        }
 
         public void SetActive(bool active)
         {

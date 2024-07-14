@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Weapons_Walter
+  m_EditorClassIdentifier: 
+  m_GroupName: Weapons_Walter
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 05ae72c11a4cdcd4db4efd0f77565547
+  m_SerializeEntries:
+  - m_GUID: e97c1374ab4b99644b74191d24bea73d
+    m_Address: Assets/Export/Weapons/Walter Exp.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14b9bf015e575ea468b7b19f9fd12693
+    m_Address: Assets/Export/Weapons/Walter Other Variant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d96833b17978cc4d9cb6383b9ed905e
+    m_Address: Assets/Prefabs/Weapons/Walter Lobby.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c72c2d164e1d0447ba588047d9478ce
+    m_Address: Assets/Prefabs/Weapons/Walter/Walter Lobby_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b3d116988115334d967a74a82eed8e7
+    m_Address: Assets/Prefabs/Weapons/Walter/Walter Other Variant_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68c51fbb0732eac49bb38970395c1d29
+    m_Address: Assets/Prefabs/Weapons/Walter/Walter Player_Gold.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8500f2b8c8adc904dbbbfd825c6b80d6, type: 2}
+    - {fileID: 11400000, guid: cc9d7050659e68742826e94738b483ab, type: 2}

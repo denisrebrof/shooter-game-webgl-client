@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Lobby_Audio
+  m_EditorClassIdentifier: 
+  m_GroupName: Lobby_Audio
+  m_Data:
+    m_SerializedData: []
+  m_GUID: f71222d38d68e1c42999af09e26b7d93
+  m_SerializeEntries:
+  - m_GUID: bd51d2e3e2dd39043bd688cb79393047
+    m_Address: Assets/Config/Repo & DAO/Sounds Config.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6ed9d85f4daa62c42920aaf7695b9bc0, type: 2}
+    - {fileID: 11400000, guid: 3d2995535400bb243952e8e3ab0ca771, type: 2}

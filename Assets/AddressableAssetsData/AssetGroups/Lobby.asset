@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Lobby
+  m_EditorClassIdentifier: 
+  m_GroupName: Lobby
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3cbe58464d1cfd14e9bc51df51d857cc
+  m_SerializeEntries:
+  - m_GUID: 7ef028880707fa0439c5b2f48a8d65b3
+    m_Address: Assets/Scenes/Lobby.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 842c82f330485c24ab29251363db0581, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 49ea00c9c5cbfa3408e7784cf7ffdafa, type: 2}
+    - {fileID: 11400000, guid: 9bfa4c08b1ca2c44f93c62c70052edb7, type: 2}
