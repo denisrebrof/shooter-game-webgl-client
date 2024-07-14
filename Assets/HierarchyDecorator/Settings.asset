@@ -876,6 +876,17 @@ MonoBehaviour:
         isBuiltIn: 1
         script: {fileID: 0}
         hash: -1
+      - displayName: FrameTimeMeasurement
+        name: Unity.PerformanceTesting.Measurements.FrameTimeMeasurement, Unity.PerformanceTesting,
+          Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+        content:
+          m_Text: 
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        shown: 0
+        isBuiltIn: 1
+        script: {fileID: 0}
+        hash: -1
       - displayName: GameObjectLocalizer
         name: UnityEngine.Localization.PropertyVariants.GameObjectLocalizer, Unity.Localization,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -1129,6 +1140,17 @@ MonoBehaviour:
         isBuiltIn: 1
         script: {fileID: 0}
         hash: -1
+      - displayName: PerformanceTestHelper
+        name: Unity.PerformanceTesting.PerformanceTestHelper, Unity.PerformanceTesting,
+          Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+        content:
+          m_Text: 
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        shown: 0
+        isBuiltIn: 1
+        script: {fileID: 0}
+        hash: -1
       - displayName: PlayableDirector
         name: UnityEngine.Playables.PlayableDirector, UnityEngine.DirectorModule,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -1187,6 +1209,17 @@ MonoBehaviour:
       - displayName: PlaymodeTestsController
         name: UnityEngine.TestTools.TestRunner.PlaymodeTestsController, UnityEngine.TestRunner,
           Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+        content:
+          m_Text: 
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        shown: 0
+        isBuiltIn: 1
+        script: {fileID: 0}
+        hash: -1
+      - displayName: ProfilerMarkerMeasurement
+        name: Unity.PerformanceTesting.Measurements.ProfilerMarkerMeasurement, Unity.PerformanceTesting,
+          Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
         content:
           m_Text: 
           m_Image: {fileID: 0}
@@ -2103,52 +2136,8 @@ MonoBehaviour:
         isBuiltIn: 1
         script: {fileID: 0}
         hash: -1
-      - displayName: NavMeshLink
-        name: Unity.AI.Navigation.NavMeshLink, Unity.AI.Navigation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        shown: 0
-        isBuiltIn: 1
-        script: {fileID: 0}
-        hash: -1
-      - displayName: NavMeshModifier
-        name: Unity.AI.Navigation.NavMeshModifier, Unity.AI.Navigation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        shown: 0
-        isBuiltIn: 1
-        script: {fileID: 0}
-        hash: -1
-      - displayName: NavMeshModifierVolume
-        name: Unity.AI.Navigation.NavMeshModifierVolume, Unity.AI.Navigation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        shown: 0
-        isBuiltIn: 1
-        script: {fileID: 0}
-        hash: -1
       - displayName: NavMeshObstacle
         name: UnityEngine.AI.NavMeshObstacle, UnityEngine.AIModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        shown: 0
-        isBuiltIn: 1
-        script: {fileID: 0}
-        hash: -1
-      - displayName: NavMeshSurface
-        name: Unity.AI.Navigation.NavMeshSurface, Unity.AI.Navigation, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
         content:
           m_Text: 
@@ -2839,9 +2828,9 @@ MonoBehaviour:
         isBuiltIn: 1
         script: {fileID: 0}
         hash: -1
-      - displayName: NavMeshLink
-        name: Unity.AI.Navigation.NavMeshLink, Unity.AI.Navigation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+      - displayName: FrameTimeMeasurement
+        name: Unity.PerformanceTesting.Measurements.FrameTimeMeasurement, Unity.PerformanceTesting,
+          Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
         content:
           m_Text: 
           m_Image: {fileID: 0}
@@ -2850,9 +2839,9 @@ MonoBehaviour:
         isBuiltIn: 1
         script: {fileID: 0}
         hash: -1
-      - displayName: NavMeshModifier
-        name: Unity.AI.Navigation.NavMeshModifier, Unity.AI.Navigation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+      - displayName: ProfilerMarkerMeasurement
+        name: Unity.PerformanceTesting.Measurements.ProfilerMarkerMeasurement, Unity.PerformanceTesting,
+          Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
         content:
           m_Text: 
           m_Image: {fileID: 0}
@@ -2861,20 +2850,9 @@ MonoBehaviour:
         isBuiltIn: 1
         script: {fileID: 0}
         hash: -1
-      - displayName: NavMeshModifierVolume
-        name: Unity.AI.Navigation.NavMeshModifierVolume, Unity.AI.Navigation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        shown: 0
-        isBuiltIn: 1
-        script: {fileID: 0}
-        hash: -1
-      - displayName: NavMeshSurface
-        name: Unity.AI.Navigation.NavMeshSurface, Unity.AI.Navigation, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
+      - displayName: PerformanceTestHelper
+        name: Unity.PerformanceTesting.PerformanceTestHelper, Unity.PerformanceTesting,
+          Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
         content:
           m_Text: 
           m_Image: {fileID: 0}
@@ -4874,5 +4852,5 @@ MonoBehaviour:
         isBuiltIn: 1
         script: {fileID: 0}
         hash: -1
-    unityVersion: 2022.3.22f1
-    unityCount: 197
+    unityVersion: 2022.3.37f1
+    unityCount: 196
