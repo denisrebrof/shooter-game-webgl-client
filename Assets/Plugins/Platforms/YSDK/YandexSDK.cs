@@ -14,6 +14,9 @@ namespace Plugins.Platforms.YSDK
 
         [DllImport("__Internal")]
         private static extern void RequestPlayerId();
+        
+        [DllImport("__Internal")]
+        private static extern void RequestPurchases();
 
         [DllImport("__Internal")]
         private static extern string GetLang();
@@ -39,9 +42,6 @@ namespace Plugins.Platforms.YSDK
         private static extern void AuthenticateUser();
 
         [DllImport("__Internal")]
-        private static extern void InitPurchases();
-
-        [DllImport("__Internal")]
         private static extern void Purchase(string id);
 
         [DllImport("__Internal")]
@@ -56,6 +56,10 @@ namespace Plugins.Platforms.YSDK
         public event Action<string> onPlayerIdReceived;
         public event Action onInterstitialShown;
         public event Action<string> onInterstitialFailed;
+        
+        public event Action<string> onPurchaseReceived;
+        public event Action<string> onPurchased;
+        public event Action<string> onPurchaseFailed;
 
         /// <summary>
         /// Пользователь открыл рекламу
@@ -94,9 +98,6 @@ namespace Plugins.Platforms.YSDK
             }
         }
 
-        /// <summary>
-        /// Call this to show interstitial ad. Don't call frequently. There is a 3 minute delay after each show.
-        /// </summary>
         public void ShowInterstitial()
         {
             ShowFullscreenAd();
@@ -119,10 +120,6 @@ namespace Plugins.Platforms.YSDK
 
         public bool GetIsOnDesktop() => !GetDeviceType().ToLower().Contains("mobile");
 
-        /// <summary>
-        /// Call this to show rewarded ad
-        /// </summary>
-        /// <param name="placement"></param>
         public void ShowRewarded(string placement)
         {
             rewardedAdPlacementsAsInt.Enqueue(ShowRewardedAd(placement));
@@ -133,40 +130,23 @@ namespace Plugins.Platforms.YSDK
         {
             Hit(eventName);
         }
-
-        /// <summary>
-        /// Call this to receive user data
-        /// </summary>
-        /// <summary>
-        /// Callback from index.html
-        /// </summary>
+        
+        
         public void OnInterstitialShown()
         {
             if (onInterstitialShown != null) onInterstitialShown.Invoke();
         }
 
-        /// <summary>
-        /// Callback from index.html
-        /// </summary>
-        /// <param name="error"></param>
         public void OnInterstitialFailed(string error)
         {
             if (onInterstitialFailed != null) onInterstitialFailed(error);
         }
 
-        /// <summary>
-        /// Callback from index.html
-        /// </summary>
-        /// <param name="placement"></param>
         public void OnRewardedOpen(int placement)
         {
             onRewardedAdOpened(placement);
         }
 
-        /// <summary>
-        /// Callback from index.html
-        /// </summary>
-        /// <param name="placement"></param>
         public void OnRewarded(int placement)
         {
             if (placement == rewardedAdPlacementsAsInt.Dequeue())
@@ -175,19 +155,11 @@ namespace Plugins.Platforms.YSDK
             }
         }
 
-        /// <summary>
-        /// Callback from index.html
-        /// </summary>
-        /// <param name="placement"></param>
         public void OnRewardedClose(int placement)
         {
             onRewardedAdClosed(placement);
         }
 
-        /// <summary>
-        /// Callback from index.html
-        /// </summary>
-        /// <param name="placement"></param>
         public void OnRewardedError(string placement)
         {
             onRewardedAdError(placement);
@@ -195,10 +167,21 @@ namespace Plugins.Platforms.YSDK
             rewardedAdPlacementsAsInt.Clear();
         }
 
-        /// <summary>
-        /// Callback from index.html
-        /// </summary>
-        /// /// <param name="playerId"></param>
+        public void OnPurchaseFailed(string pid)
+        {
+            if (onPurchaseFailed != null) onPurchaseFailed.Invoke(pid);
+        }
+        
+        public void OnPurchaseSuccess(string pid)
+        {
+            if (onPurchased != null) onPurchased.Invoke(pid);
+        }
+        
+        public void OnPurchaseReceived(string pid)
+        {
+            if (onPurchaseReceived != null) onPurchaseReceived.Invoke(pid);
+        }
+
         public void OnHandlePlayerId(string playerId)
         {
             Debug.Log("Handle PId in YandexSDK");

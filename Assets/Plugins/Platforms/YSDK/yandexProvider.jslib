@@ -1,7 +1,4 @@
 mergeInto(LibraryManager.library, {
-  InitPurchases: function() {
-    initPayments();
-  },
 
   Purchase: function(id) {
     buy(id);
@@ -59,8 +56,11 @@ mergeInto(LibraryManager.library, {
   },
 
   RequestPlayerId: function() {
-    console.log('request player id in jslib 1');
     requestPlayerId();
-    console.log('requested player id in jslib 2');
-  }
+  },
+  
+  RequestPurchases: function() {
+      requestPurchases();
+    }
+    
 });

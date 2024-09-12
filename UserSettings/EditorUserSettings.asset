@@ -6,31 +6,31 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 54545256570d51035d595c7516220f44454e1b7f2e7a206475284537b4b5366b
-      flags: 0
-    RecentlyUsedSceneGuid-1:
-      value: 570504565151580f5e0a5e7513270744444e417f757b73697f2a4935bbe16661
-      flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 0604555754035e030c5e087413250f44414f1b782d792034747c4c6bb7b4663e
-      flags: 0
-    RecentlyUsedSceneGuid-3:
       value: 5308060006025a090b5c5b7512255b44144e4e7c2a292766797e1837b7e4653d
       flags: 0
-    RecentlyUsedSceneGuid-4:
+    RecentlyUsedSceneGuid-1:
       value: 500102550100585f0f5c5c7b15735a44134f4079747b7e637c2a1e64e4b1623b
       flags: 0
-    RecentlyUsedSceneGuid-5:
+    RecentlyUsedSceneGuid-2:
       value: 520204020004500a08570e2447275a4447164e7f752e7068287c4a67b3e53068
       flags: 0
-    RecentlyUsedSceneGuid-6:
+    RecentlyUsedSceneGuid-3:
+      value: 54545256570d51035d595c7516220f44454e1b7f2e7a206475284537b4b5366b
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 0502025254010a580c0d5f2616740b4440164b797b7f25652f784931e1b16d3a
+      flags: 0
+    RecentlyUsedSceneGuid-5:
       value: 56000d5450545e5a5a5b087141700d4443161e297c7e22357e2c4936e0b53769
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 5707565753540c0e0b5a5f7513260f44121548727e7d76607a2a4a30b0e63161
       flags: 0
     RecentlyUsedSceneGuid-7:
       value: 5500035704050f0c58560d70117b0744424f4b2e2a2b70637a281861e6e5676c
       flags: 0
     RecentlyUsedSceneGuid-8:
-      value: 5707565753540c0e0b5a5f7513260f44121548727e7d76607a2a4a30b0e63161
+      value: 005256025c57505e0b0c0920417a5a4413161e727b7a24332b281f36e1b7376e
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
@@ -52,4 +52,5 @@ EditorUserSettings:
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 1
+  m_VCScanLocalPackagesOnConnect: 1
   m_ArtifactGarbageCollection: 1

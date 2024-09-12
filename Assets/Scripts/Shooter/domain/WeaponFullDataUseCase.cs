@@ -26,7 +26,7 @@ namespace Shooter.domain
         {
             var state = data.State;
             var isLocked = !state.Purchased && state.info.availableFromLevel > playerLevel;
-            var isPurchasable = !state.Purchased && !isLocked && balance > state.Cost;
+            var isPurchasable = !state.Purchased && !isLocked && (balance > state.Cost || data.State.info.premium);
             var isUpgradable = state.Upgradable && balance > state.Cost;
             return new WeaponFullData
             {

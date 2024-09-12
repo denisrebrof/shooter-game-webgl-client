@@ -13,15 +13,8 @@ MonoBehaviour:
   m_Name: Localization-Assets-Shared
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Assets-Shared
-  m_Data:
-    m_SerializedData: []
   m_GUID: 6d78b6f382370e74a8bac2c86ca9d223
   m_SerializeEntries:
-  - m_GUID: ebe975666d31d2845a740672f4af78ae
-    m_Address: Assets/Localization/Localization Main Table Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4c045df02d1c9ba4b9fed4ec71261a22
     m_Address: Assets/Localization/Weapons Shared Data.asset
     m_ReadOnly: 1
@@ -29,6 +22,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ac4165831c8670e4f8c327d3a4c12210
     m_Address: Assets/Localization/Weapon Info Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebe975666d31d2845a740672f4af78ae
+    m_Address: Assets/Localization/Localization Main Table Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

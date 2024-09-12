@@ -2,6 +2,7 @@
         <script type="text/javascript">
               var sdk;
               var payments = null;
+              var paymentsRequested = false;
 
               YaGames.init({
                 adv: {
@@ -93,6 +94,66 @@
                         console.log('Error while requestPlayerId:', err);
                   });
               }
+        </script>
+		
+		<script>
+			function requestPurchases() {
+				if(payments == null) {
+					if(!paymentsRequested) {
+						paymentsRequested = true
+						sdk.getPayments({ signed: false }).then(_payments => {
+							payments = _payments;
+							processPurchases();
+						}).catch(err => {
+							paymentsRequested = false
+						});
+					}
+				} else {
+					processPurchases();
+				}
+			}
+			
+			function processPurchases() {
+				payments.getPurchases().then(purchases => {
+					for (let i = 0; i < purchases.length; i++) {
+						window.unityInstance.SendMessage('YandexSDK', 'OnPurchaseReceived', purchases[i].productID);
+					}
+				}).catch(err => {
+					// Throws the USER_NOT_AUTHORIZED exception for logged off users.
+				});
+			}
+		
+              function buy(pid) {
+				if(payments == null) {
+					if(!paymentsRequested) {
+						paymentsRequested = true
+						sdk.getPayments({ signed: true }).then(_payments => {
+							// Purchases are available.
+							payments = _payments;
+							buyFromPayments(pid)
+						}).catch(err => {
+							paymentsRequested = false
+							// Purchases are unavailable. Enable monetization in the Games Console.
+							// Make sure the Purchases tab in the Games Console features a table
+							// with at least one in-game product and the "Purchases are allowed" label.
+							window.unityInstance.SendMessage('YandexSDK', 'OnPurchaseFailed', pid);
+						});
+					}
+				} else {
+					buyFromPayments(pid)
+				}
+              }
+			  
+			  function buyFromPayments(pid) {
+				payments.purchase({ id: pid }).then(purchase => {
+					window.unityInstance.SendMessage('YandexSDK', 'OnPurchaseSuccess', pid);
+				}).catch(err => {
+					window.unityInstance.SendMessage('YandexSDK', 'OnPurchaseFailed', pid);
+					// Purchase failed: no product with this id exists in the Games Console,
+					// the user didn't log in, changed their mind, and closed the payment window,
+					// the purchase timed out, there were insufficient funds, or for any other reason.
+				});
+			  }
         </script>
 
         <!-- Хит для метрики -->

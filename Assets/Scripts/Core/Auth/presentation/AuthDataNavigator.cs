@@ -21,11 +21,11 @@ namespace Core.Auth.presentation
 
         public IObservable<AuthData> RequestAuthData()
         {
-// #if YANDEX_SDK
-//             return GetYandexData();
-// #else
+#if YANDEX_SDK && !UNITY_EDITOR
+             return GetYandexData();
+#else
             return Observable.Return(GetLocalData());
-// #endif
+#endif
         }
 
         private AuthData GetLocalData()

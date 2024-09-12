@@ -357,13 +357,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 6401230768788439109}
   logCapacity: 10
-  showDamage: 1
+  showDamage: 0
   killedLog: '- {0} killed {1}'
   damagedLog: '- {0} damaged {1} by $ hp'
   joinedLog: '- Player {0} joined!'
   leftLog: '- Player {0} left!'
   currentLog: You
-  killedLogRu: "- {0} \u0443\u0431\u0438\u043B{1}"
+  killedLogRu: "- {0} \u0443\u0431\u0438\u043B {1}"
   damagedLogRu: "- {0} \u0440\u0430\u043D\u0438\u043B {1} \u043D\u0430 $ \u0445\u043F"
   joinedLogRu: "- \u0418\u0433\u0440\u043E\u043A {0} \u0437\u0430\u0448\u0435\u043B!"
   leftLogRu: "- \u0418\u0433\u0440\u043E\u043A {0} \u0432\u044B\u0448\u0435\u043B!"

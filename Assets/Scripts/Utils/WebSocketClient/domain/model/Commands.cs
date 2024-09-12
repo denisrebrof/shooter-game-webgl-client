@@ -52,5 +52,7 @@
         
         public const long HitByBot = 33L;
         public const long IntentFlagAction = 34L;
+        
+        public const long PurchaseAllWeapons = 36L;
     }
 }

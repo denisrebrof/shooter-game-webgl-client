@@ -1,6 +1,5 @@
 using System;
 using Core.Sound.presentation;
-using InfimaGames.LowPolyShooterPack;
 using Michsky.MUIP;
 using Shooter.domain;
 using Shooter.domain.Model;
@@ -24,6 +23,7 @@ namespace Shooter.presentation.UI.Lobby
         [Inject] private WeaponStoreOperationsUseCase operationsUseCase;
         [Inject] private SetWeaponSlotUseCase setWeaponSlotUseCase;
         [Inject] private PlaySoundNavigator playSoundNavigator;
+        // [Inject]
 
         [Header("Common")]
 
@@ -45,6 +45,7 @@ namespace Shooter.presentation.UI.Lobby
         [SerializeField] private LocalizedString purchaseLockedText;
         [SerializeField] private Sprite lockedIcon;
         [SerializeField] private Sprite avaliableForPurchaseIcon;
+        [SerializeField] private Sprite avaliableForPurchasePremIcon;
         [SerializeField] private GameObject purchaseButtonRoot;
         [SerializeField] private ButtonManager purchaseButton;
 
@@ -142,7 +143,10 @@ namespace Shooter.presentation.UI.Lobby
             purchaseButtonRoot.SetActive(!state.Purchased);
             if (!state.Purchased)
             {
-                purchaseButton.SetIcon(data.IsLocked ? lockedIcon : avaliableForPurchaseIcon);
+                var purchaseIcon = data.IsLocked 
+                    ? lockedIcon 
+                    : info.premium ? avaliableForPurchasePremIcon : avaliableForPurchaseIcon;
+                purchaseButton.SetIcon(purchaseIcon);
                 purchaseButton.SetText("");
                 var purchaseText = data.IsLocked ? purchaseLockedText : purchaseAvailableText;
                 purchaseText.GetLocalizedStringAsync().Completed += result =>
@@ -153,7 +157,8 @@ namespace Shooter.presentation.UI.Lobby
                 };
                 purchaseButton.Interactable(data.IsPurchasable);
                 purchaseButton.onClick.RemoveAllListeners();
-                purchaseButton.onClick.AddListener(TryPurchase);
+                if(info.premium) purchaseButton.onClick.AddListener(TryPurchasePrem);
+                else purchaseButton.onClick.AddListener(TryPurchase);
             }
 
             upgradeButtonRoot.SetActive(state.Upgradable);
@@ -251,6 +256,12 @@ namespace Shooter.presentation.UI.Lobby
                 .TryPurchase(weaponId)
                 .Subscribe(OnPurchaseResult)
                 .AddTo(this);
+        }
+        
+        private void TryPurchasePrem()
+        {
+            playSoundNavigator.Play(SoundType.ButtonDefault);
+            Debug.Log("TryPurchasePrem");
         }
 
         private void OnPurchaseResult(bool result)

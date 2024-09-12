@@ -23,6 +23,7 @@ namespace Shooter._di
         [SerializeField] private SimpleBulletPool bulletPool;
         [SerializeField] private Canvas playerCanvas;
         [SerializeField] private MinimapController minimapController;
+        [SerializeField] private GamePopupsNavigator popupsNavigator;
         [SerializeField] private Transform playersRoot;
 
         public override void InstallBindings()
@@ -59,6 +60,7 @@ namespace Shooter._di
             Container.Bind<SimpleBulletPool>().FromInstance(bulletPool).AsSingle();
             Container.Bind<Canvas>().WithId("PlayerCanvas").FromInstance(playerCanvas).AsSingle();
             Container.BindInterfacesAndSelfTo<MinimapController>().FromInstance(minimapController).AsSingle();
+            Container.BindInterfacesAndSelfTo<GamePopupsNavigator>().FromInstance(popupsNavigator).AsSingle();
             Container.Bind<Transform>().WithId("PlayersRoot").FromInstance(playersRoot).AsSingle();
         }
     }

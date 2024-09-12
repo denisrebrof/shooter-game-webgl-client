@@ -13,16 +13,8 @@ MonoBehaviour:
   m_Name: Localization-String-Tables-Russian (ru)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-String-Tables-Russian (ru)
-  m_Data:
-    m_SerializedData: []
   m_GUID: a096ac62bc4051947b8bb246cfeb213a
   m_SerializeEntries:
-  - m_GUID: f20186f3f4b6e734293c1046c1d8a35c
-    m_Address: Localization Main Table_ru
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ru
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 01eafb34e3b89804998288bf371d1642
     m_Address: Weapons_ru
     m_ReadOnly: 1
@@ -31,6 +23,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9c4c1121ab7d7ad41a8fa45c18494af7
     m_Address: Weapon Info_ru
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f20186f3f4b6e734293c1046c1d8a35c
+    m_Address: Localization Main Table_ru
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ru

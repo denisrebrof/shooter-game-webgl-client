@@ -122,33 +122,27 @@ namespace Shooter.domain.Model
         public string nameLocalizationKey;
         public int availableFromLevel;
         public bool automatic;
+        public bool premium;
         public WeaponSettings[] settingsLevels;
 
-        public bool Equals(WeaponInfo other)
-        {
-            return id == other.id && name == other.name && nameLocalizationKey == other.nameLocalizationKey &&
-                   availableFromLevel == other.availableFromLevel &&
-                   automatic == other.automatic && Equals(settingsLevels, other.settingsLevels);
-        }
+        public bool Equals(WeaponInfo other) =>
+            id == other.id && 
+            name == other.name && 
+            nameLocalizationKey == other.nameLocalizationKey &&
+            availableFromLevel == other.availableFromLevel &&
+            automatic == other.automatic &&
+            premium == other.premium &&
+            Equals(settingsLevels, other.settingsLevels);
 
-        public override bool Equals(object obj)
-        {
-            return obj is WeaponInfo other && Equals(other);
-        }
+        public override bool Equals(object obj) => obj is WeaponInfo other && Equals(other);
 
         public override int GetHashCode()
         {
             return HashCode.Combine(id, name, nameLocalizationKey, availableFromLevel, automatic, settingsLevels);
         }
 
-        public static bool operator ==(WeaponInfo left, WeaponInfo right)
-        {
-            return left.Equals(right);
-        }
+        public static bool operator ==(WeaponInfo left, WeaponInfo right) => left.Equals(right);
 
-        public static bool operator !=(WeaponInfo left, WeaponInfo right)
-        {
-            return !left.Equals(right);
-        }
+        public static bool operator !=(WeaponInfo left, WeaponInfo right) => !left.Equals(right);
     }
 }

@@ -8,6 +8,7 @@ namespace Shooter.presentation.Player.Weapons
     public class PlayerProjectile : ProjectileItemBase
     {
         [Inject] private ShootPlayerUseCase shootPlayerUseCase;
+        [Inject] private GamePopupsNavigator popupsNavigator;
 
         protected override void HandleHit(RaycastHit hit)
         {
@@ -25,6 +26,7 @@ namespace Shooter.presentation.Player.Weapons
                 return;
 
             shootPlayerUseCase.Hit(playerId, weaponId, damage, hit.point);
+            popupsNavigator.ShowDamage(hit.point, damage);
         }
     }
 }

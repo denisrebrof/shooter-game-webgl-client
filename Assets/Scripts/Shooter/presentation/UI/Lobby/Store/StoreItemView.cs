@@ -36,6 +36,12 @@ namespace Shooter.presentation.UI.Lobby.Store
         [SerializeField] private Sprite upgradeIcon;
         [SerializeField] private TMP_Text costText;
         [SerializeField] private Image costIcon;
+        [SerializeField] private Image currencyIcon;
+        [SerializeField] private Color defCostColor;
+        [SerializeField] private Color premCostColor;
+        [SerializeField] private Sprite defCurrencyIcon;
+        [SerializeField] private Sprite premCurrencyIcon;
+        [SerializeField] private Image costRootImage;
         [SerializeField] private GameObject costRoot;
 
         [Header("Lock")]
@@ -87,6 +93,8 @@ namespace Shooter.presentation.UI.Lobby.Store
             costRoot.SetActive(!state.Purchased || state.Upgradable);
             costIcon.sprite = state.Purchased ? upgradeIcon : purchaseIcon;
             costText.text = state.Cost.ToString();
+            costRootImage.color = info.premium ? premCostColor : defCostColor;
+            currencyIcon.sprite = info.premium ? premCurrencyIcon : defCurrencyIcon;
         }
 
         private void SetSlot(bool isPrimary, bool isSecondary)

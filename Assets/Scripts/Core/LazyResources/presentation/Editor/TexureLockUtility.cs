@@ -29,7 +29,7 @@ namespace Core.LazyResources.presentation.Editor
                     };
                     entries.Add(entry);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     Debug.LogError("Error while create texture lock");
                 }
@@ -62,7 +62,7 @@ namespace Core.LazyResources.presentation.Editor
                     importer.SaveAndReimport();
                     Debug.Log($"Restored texture {textureLock.path} from size {prevMaxSize} with size {textureLock.originalMaxSize}");
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     Debug.LogError("Error while restore texture lock");
                 }
